@@ -1,6 +1,7 @@
 package com.example.stock.Dao;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -13,4 +14,5 @@ Employe findByNomFR(String nomFR);
 Employe findByPrenomFR(String prenomFR);
 Employe findByPrenomFRAndNomFR(String prenomFR,String nomFR);
 List<Employe> findAll();
+Optional<Employe> findById(Long id);
 }

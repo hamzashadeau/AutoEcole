@@ -22,6 +22,15 @@ public class Employe {
 	private String adresseAR;
 	@Temporal(TemporalType.DATE)
 	private Date dateNaissance;
+	private String cin;
+	private Double salaire;
+	
+	public String getCin() {
+		return cin;
+	}
+	public void setCin(String cin) {
+		this.cin = cin;
+	}
 	public Long getId() {
 		return id;
 	}
@@ -70,8 +79,15 @@ public class Employe {
 	public void setDateNaissance(Date dateNaissance) {
 		this.dateNaissance = dateNaissance;
 	}
+
+	public Double getSalaire() {
+		return salaire;
+	}
+	public void setSalaire(Double salaire) {
+		this.salaire = salaire;
+	}
 	public Employe(Long id, String nomFR, String nomAR, String prenomFR, String prenomAR, String addresseFR,
-			String adresseAR, Date dateNaissance) {
+			String adresseAR, Date dateNaissance, String cin, Double salaire) {
 		super();
 		this.id = id;
 		this.nomFR = nomFR;
@@ -81,6 +97,8 @@ public class Employe {
 		this.addresseFR = addresseFR;
 		this.adresseAR = adresseAR;
 		this.dateNaissance = dateNaissance;
+		this.cin = cin;
+		this.salaire = salaire;
 	}
 	public Employe() {
 		super();
@@ -90,7 +108,9 @@ public class Employe {
 	public String toString() {
 		return "Employe [id=" + id + ", nomFR=" + nomFR + ", nomAR=" + nomAR + ", prenomFR=" + prenomFR + ", prenomAR="
 				+ prenomAR + ", addresseFR=" + addresseFR + ", adresseAR=" + adresseAR + ", dateNaissance="
-				+ dateNaissance + "]";
-	}	
+				+ dateNaissance + ", cin=" + cin + ", salaire=" + salaire + "]";
+	}
+	
+	
 	
 }

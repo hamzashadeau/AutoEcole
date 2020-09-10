@@ -21,7 +21,7 @@ public class Observation {
 	@Temporal(TemporalType.DATE)
 	private Date date;
 	@ManyToOne
-	private Employe employe;
+	private Client client;
 	public Long getId() {
 		return id;
 	}
@@ -52,27 +52,27 @@ public class Observation {
 	public void setDate(Date date) {
 		this.date = date;
 	}
-	public Employe getEmploye() {
-		return employe;
+	public Client getClient() {
+		return client;
 	}
-	public void setEmploye(Employe employe) {
-		this.employe = employe;
+	public void setClient(Client client) {
+		this.client = client;
 	}
-	public Observation(Long id, String numeroSession, String status, Long score, Date date, Employe employe) {
+	public Observation(Long id, String numeroSession, String status, Long score, Date date, Client client) {
 		super();
 		this.id = id;
 		this.numeroSession = numeroSession;
 		this.status = status;
 		this.score = score;
 		this.date = date;
-		this.employe = employe;
+		this.client = client;
 	}
 	@Override
 	public String toString() {
 		return "Observation [id=" + id + ", numeroSession=" + numeroSession + ", status=" + status + ", score=" + score
-				+ ", date=" + date + ", employe=" + employe + "]";
+				+ ", date=" + date + ", client=" + client + "]";
 	}
-
+	
 
 	
 	}

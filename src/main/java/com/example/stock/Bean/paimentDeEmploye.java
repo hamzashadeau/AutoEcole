@@ -1,6 +1,5 @@
 package com.example.stock.Bean;
 
-import java.util.ArrayList;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -8,9 +7,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
 @Entity
 public class paimentDeEmploye {	
@@ -22,8 +23,9 @@ public class paimentDeEmploye {
 	private Long montantTotal;
 	@Temporal(TemporalType.DATE)
 	private Date date;
+	@JsonProperty(access = Access.WRITE_ONLY)
 @ManyToOne
-private Client client;
+private Employe employe;
 public Long getId() {
 	return id;
 }
@@ -54,30 +56,31 @@ public Date getDate() {
 public void setDate(Date date) {
 	this.date = date;
 }
-public Client getClient() {
-	return client;
+
+public paimentDeEmploye() {
+	super();
+	// TODO Auto-generated constructor stub
 }
-public void setClient(Client client) {
-	this.client = client;
+public Employe getEmploye() {
+	return employe;
 }
-@Override
-public String toString() {
-	return "paimentDeEmploye [id=" + id + ", montantRestantes=" + montantRestantes + ", monatantpaye=" + monatantpaye
-			+ ", montantTotal=" + montantTotal + ", date=" + date + ", client=" + client + "]";
+public void setEmploye(Employe employe) {
+	this.employe = employe;
 }
 public paimentDeEmploye(Long id, Long montantRestantes, Long monatantpaye, Long montantTotal, Date date,
-		Client client) {
+		Employe employe) {
 	super();
 	this.id = id;
 	this.montantRestantes = montantRestantes;
 	this.monatantpaye = monatantpaye;
 	this.montantTotal = montantTotal;
 	this.date = date;
-	this.client = client;
+	this.employe = employe;
 }
-public paimentDeEmploye() {
-	super();
-	// TODO Auto-generated constructor stub
+@Override
+public String toString() {
+	return "paimentDeEmploye [id=" + id + ", montantRestantes=" + montantRestantes + ", monatantpaye=" + monatantpaye
+			+ ", montantTotal=" + montantTotal + ", date=" + date + ", employe=" + employe + "]";
 }
 
 

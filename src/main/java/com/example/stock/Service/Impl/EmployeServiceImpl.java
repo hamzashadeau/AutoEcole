@@ -32,4 +32,39 @@ private EmployeDao employeDao;
 		return employeDao.findAll();
 	}
 
+	@Override
+	public int save(Employe employe) {
+		if(employe.getId()!= null) {
+			return -1;
+		}else {
+		 employeDao.save(employe);
+		 return 1;
+	}
+	}
+	@Override
+	public int edit(Employe employe) {
+		if(employe.getId()== null) {
+			return -1;
+		}else {
+		 employeDao.save(employe);
+		 return 1;
+	}
+	}
+
+	@Override
+	public int deleteById(Long id) {
+		employeDao.deleteById(id);
+		Employe employe = findById(id);
+		if(employe== null) {
+			return 1;
+		}else {
+		return -1;
+	}
+	}
+
+	@Override
+	public Employe findById(Long id) {
+		return employeDao.findById(id).get();
+	}
+
 }

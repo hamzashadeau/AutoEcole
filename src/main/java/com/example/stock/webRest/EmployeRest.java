@@ -4,7 +4,11 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,6 +21,19 @@ import com.example.stock.Service.Facade.EmployeService;
 public class EmployeRest {
 	@Autowired
 private EmployeService employeService;
+	@DeleteMapping("deleteById/id/{id}")
+	public int deleteById(@PathVariable Long id) {
+		return employeService.deleteById(id);
+	}
+	@GetMapping("findById/id/{id}")
+	public Employe findById(@PathVariable Long id) {
+		return employeService.findById(id);
+	}
+	
+	@PostMapping("edit")
+public int edit(Employe employe) {
+		return employeService.edit(employe);
+	}
 @GetMapping("findAll")
 public List<Employe> findAll(){
 	return employeService.findAll();
@@ -31,6 +48,12 @@ public Employe findByPrenomFR(String prenomFR) {
 
 public Employe findByPrenomFRAndNomFR(String prenomFR, String nomFR) {
 	return employeService.findByPrenomFRAndNomFR(prenomFR, nomFR);
+}
+@PostMapping("save")
+public int save(@RequestBody Employe employe) {
+	System.out.println(employe.getAdresseAR());
+	System.out.println(employe.getNomAR());
+	return employeService.save(employe);
 }
 
 }

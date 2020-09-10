@@ -9,4 +9,9 @@ public interface EmployeService {
 	Employe findByPrenomFR(String prenomFR);
 	Employe findByPrenomFRAndNomFR(String prenomFR,String nomFR);
 	List<Employe> findAll();
+	public int save(Employe employe);
+	public int edit(Employe employe);
+	public int deleteById(Long id);
+	public Employe findById(Long id);
+
 }

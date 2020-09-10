@@ -13,12 +13,18 @@ import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
+
 @Entity
 public class Client {	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private byte[] image;
+	private String imageName;
+	private String imageType;
+	private String gender;
 	private String generatedcode;
 	private String nomFR;
 	private String nomAR;
@@ -26,6 +32,7 @@ public class Client {
 	private String prenomAR;
 	private String addresseFR;
 	private String adresseAR;
+	private String email;
 	@Temporal(TemporalType.DATE)
 	private Date dateNaissance;
 	@Temporal(TemporalType.DATE)
@@ -45,10 +52,10 @@ public class Client {
 	private String moniteurTheorique;
 	private String moniteurPratique;
 	private String vehicule;
-	@OneToMany
-	private List<Observation> observations = new ArrayList<Observation>();
-	@OneToMany
-	private List<heureConduite> heureConduites = new ArrayList<heureConduite>();
+	private Double prixTotal;
+	private Double prixRestantes;
+	private Long totalHeureConduite;
+	
 	public Long getId() {
 		return id;
 	}
@@ -199,27 +206,65 @@ public class Client {
 	public void setVehicule(String vehicule) {
 		this.vehicule = vehicule;
 	}
-	public List<Observation> getObservations() {
-		return observations;
+	public String getEmail() {
+		return email;
 	}
-	public void setObservations(ArrayList<Observation> observations) {
-		this.observations = observations;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-	public List<heureConduite> getHeureConduites() {
-		return heureConduites;
+	
+	public Client() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	public void setHeureConduites(ArrayList<heureConduite> heureConduites) {
-		this.heureConduites = heureConduites;
+	public String getImageName() {
+		return imageName;
 	}
-	public Client(Long id, byte[] image, String generatedcode, String nomFR, String nomAR, String prenomFR,
-			String prenomAR, String addresseFR, String adresseAR, Date dateNaissance, Date dateExamen,
-			Date dateInscription, Boolean possedePermis, String premisNumero, String numeroDeSession, String telephone,
-			String profession, String niveauEtude, String cin, String permisDemande, String langueExam,
-			String statusCondidat, String moniteurTheorique, String moniteurPratique, String vehicule,
-			ArrayList<Observation> observations, List<heureConduite> heureConduites) {
+	public void setImageName(String imageName) {
+		this.imageName = imageName;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getImageType() {
+		return imageType;
+	}
+	public void setImageType(String imageType) {
+		this.imageType = imageType;
+	}
+	public Double getPrixTotal() {
+		return prixTotal;
+	}
+	public void setPrixTotal(Double prixTotal) {
+		this.prixTotal = prixTotal;
+	}
+	public Double getPrixRestantes() {
+		return prixRestantes;
+	}
+	public void setPrixRestantes(Double prixRestantes) {
+		this.prixRestantes = prixRestantes;
+	}
+	public Long getTotalHeureConduite() {
+		return totalHeureConduite;
+	}
+	public void setTotalHeureConduite(Long totalHeureConduite) {
+		this.totalHeureConduite = totalHeureConduite;
+	}
+	public Client(Long id, byte[] image, String imageName, String imageType, String gender, String generatedcode,
+			String nomFR, String nomAR, String prenomFR, String prenomAR, String addresseFR, String adresseAR,
+			String email, Date dateNaissance, Date dateExamen, Date dateInscription, Boolean possedePermis,
+			String premisNumero, String numeroDeSession, String telephone, String profession, String niveauEtude,
+			String cin, String permisDemande, String langueExam, String statusCondidat, String moniteurTheorique,
+			String moniteurPratique, String vehicule, Double prixTotal, Double prixRestantes, Long totalHeureConduite) {
 		super();
 		this.id = id;
 		this.image = image;
+		this.imageName = imageName;
+		this.imageType = imageType;
+		this.gender = gender;
 		this.generatedcode = generatedcode;
 		this.nomFR = nomFR;
 		this.nomAR = nomAR;
@@ -227,6 +272,7 @@ public class Client {
 		this.prenomAR = prenomAR;
 		this.addresseFR = addresseFR;
 		this.adresseAR = adresseAR;
+		this.email = email;
 		this.dateNaissance = dateNaissance;
 		this.dateExamen = dateExamen;
 		this.dateInscription = dateInscription;
@@ -243,25 +289,23 @@ public class Client {
 		this.moniteurTheorique = moniteurTheorique;
 		this.moniteurPratique = moniteurPratique;
 		this.vehicule = vehicule;
-		this.observations = observations;
-		this.heureConduites = heureConduites;
-	}
-	public Client() {
-		super();
-		// TODO Auto-generated constructor stub
+		this.prixTotal = prixTotal;
+		this.prixRestantes = prixRestantes;
+		this.totalHeureConduite = totalHeureConduite;
 	}
 	@Override
 	public String toString() {
-		return "Client [id=" + id + ", image=" + Arrays.toString(image) + ", generatedcode=" + generatedcode
-				+ ", nomFR=" + nomFR + ", nomAR=" + nomAR + ", prenomFR=" + prenomFR + ", prenomAR=" + prenomAR
-				+ ", addresseFR=" + addresseFR + ", adresseAR=" + adresseAR + ", dateNaissance=" + dateNaissance
+		return "Client [id=" + id + ", image=" + Arrays.toString(image) + ", imageName=" + imageName + ", imageType="
+				+ imageType + ", gender=" + gender + ", generatedcode=" + generatedcode + ", nomFR=" + nomFR
+				+ ", nomAR=" + nomAR + ", prenomFR=" + prenomFR + ", prenomAR=" + prenomAR + ", addresseFR="
+				+ addresseFR + ", adresseAR=" + adresseAR + ", email=" + email + ", dateNaissance=" + dateNaissance
 				+ ", dateExamen=" + dateExamen + ", dateInscription=" + dateInscription + ", possedePermis="
 				+ possedePermis + ", premisNumero=" + premisNumero + ", numeroDeSession=" + numeroDeSession
 				+ ", telephone=" + telephone + ", profession=" + profession + ", niveauEtude=" + niveauEtude + ", cin="
 				+ cin + ", permisDemande=" + permisDemande + ", langueExam=" + langueExam + ", statusCondidat="
 				+ statusCondidat + ", moniteurTheorique=" + moniteurTheorique + ", moniteurPratique=" + moniteurPratique
-				+ ", vehicule=" + vehicule + ", observations=" + observations + ", heureConduites=" + heureConduites
-				+ "]";
+				+ ", vehicule=" + vehicule + ", prixTotal=" + prixTotal + ", prixRestantes=" + prixRestantes
+				+ ", totalHeureConduite=" + totalHeureConduite + "]";
 	}
 	
 	}
