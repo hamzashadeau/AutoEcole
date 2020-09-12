@@ -18,12 +18,9 @@ public class paimentDeEmploye {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	private Long montantRestantes;
-	private Long monatantpaye;
-	private Long montantTotal;
+	private Double monatant;
 	@Temporal(TemporalType.DATE)
 	private Date date;
-	@JsonProperty(access = Access.WRITE_ONLY)
 @ManyToOne
 private Employe employe;
 public Long getId() {
@@ -32,24 +29,14 @@ public Long getId() {
 public void setId(Long id) {
 	this.id = id;
 }
-public Long getMontantRestantes() {
-	return montantRestantes;
+
+public Double getMonatant() {
+	return monatant;
 }
-public void setMontantRestantes(Long montantRestantes) {
-	this.montantRestantes = montantRestantes;
+public void setMonatant(Double monatant) {
+	this.monatant = monatant;
 }
-public Long getMonatantpaye() {
-	return monatantpaye;
-}
-public void setMonatantpaye(Long monatantpaye) {
-	this.monatantpaye = monatantpaye;
-}
-public Long getMontantTotal() {
-	return montantTotal;
-}
-public void setMontantTotal(Long montantTotal) {
-	this.montantTotal = montantTotal;
-}
+
 public Date getDate() {
 	return date;
 }
@@ -67,21 +54,19 @@ public Employe getEmploye() {
 public void setEmploye(Employe employe) {
 	this.employe = employe;
 }
-public paimentDeEmploye(Long id, Long montantRestantes, Long monatantpaye, Long montantTotal, Date date,
-		Employe employe) {
+public paimentDeEmploye(Long id, Double monatant, Date date, Employe employe) {
 	super();
 	this.id = id;
-	this.montantRestantes = montantRestantes;
-	this.monatantpaye = monatantpaye;
-	this.montantTotal = montantTotal;
+	this.monatant = monatant;
 	this.date = date;
 	this.employe = employe;
 }
 @Override
 public String toString() {
-	return "paimentDeEmploye [id=" + id + ", montantRestantes=" + montantRestantes + ", monatantpaye=" + monatantpaye
-			+ ", montantTotal=" + montantTotal + ", date=" + date + ", employe=" + employe + "]";
+	return "paimentDeEmploye [id=" + id + ", monatant=" + monatant + ", date=" + date + ", employe=" + employe + "]";
 }
+
+
 
 
 	}

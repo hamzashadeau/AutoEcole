@@ -3,6 +3,7 @@ package com.example.stock.Service.Facade;
 import java.util.List;
 
 import com.example.stock.Bean.paimentDeClient;
+import com.example.stock.Bean.paimentDeEmploye;
 
 public interface paimentDeClientService {
 	List<paimentDeClient> findByclientCin(String cin);

@@ -24,7 +24,44 @@ public class Employe {
 	private Date dateNaissance;
 	private String cin;
 	private Double salaire;
+	private String gender;
+	private String telephone;
+	private String lieuNaissance;
+	private String email;
+	private String situationFamiliale;
+	private int nbrEnfant;
+	private Date dateEmbauche;
 	
+	public String getSituationFamiliale() {
+		return situationFamiliale;
+	}
+	public void setSituationFamiliale(String situationFamiliale) {
+		this.situationFamiliale = situationFamiliale;
+	}
+	public int getNbrEnfant() {
+		return nbrEnfant;
+	}
+	public void setNbrEnfant(int nbrEnfant) {
+		this.nbrEnfant = nbrEnfant;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getTelephone() {
+		return telephone;
+	}
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public String getCin() {
 		return cin;
 	}
@@ -86,8 +123,21 @@ public class Employe {
 	public void setSalaire(Double salaire) {
 		this.salaire = salaire;
 	}
+	public String getLieuNaissance() {
+		return lieuNaissance;
+	}
+	public void setLieuNaissance(String lieuNaissance) {
+		this.lieuNaissance = lieuNaissance;
+	}
+	public Date getDateEmbauche() {
+		return dateEmbauche;
+	}
+	public void setDateEmbauche(Date dateEmbauche) {
+		this.dateEmbauche = dateEmbauche;
+	}
 	public Employe(Long id, String nomFR, String nomAR, String prenomFR, String prenomAR, String addresseFR,
-			String adresseAR, Date dateNaissance, String cin, Double salaire) {
+			String adresseAR, Date dateNaissance, String cin, Double salaire, String gender, String telephone,
+			String lieuNaissance, String email, String situationFamiliale, int nbrEnfant, Date dateEmbauche) {
 		super();
 		this.id = id;
 		this.nomFR = nomFR;
@@ -99,18 +149,25 @@ public class Employe {
 		this.dateNaissance = dateNaissance;
 		this.cin = cin;
 		this.salaire = salaire;
-	}
-	public Employe() {
-		super();
-		// TODO Auto-generated constructor stub
+		this.gender = gender;
+		this.telephone = telephone;
+		this.lieuNaissance = lieuNaissance;
+		this.email = email;
+		this.situationFamiliale = situationFamiliale;
+		this.nbrEnfant = nbrEnfant;
+		this.dateEmbauche = dateEmbauche;
 	}
 	@Override
 	public String toString() {
 		return "Employe [id=" + id + ", nomFR=" + nomFR + ", nomAR=" + nomAR + ", prenomFR=" + prenomFR + ", prenomAR="
 				+ prenomAR + ", addresseFR=" + addresseFR + ", adresseAR=" + adresseAR + ", dateNaissance="
-				+ dateNaissance + ", cin=" + cin + ", salaire=" + salaire + "]";
+				+ dateNaissance + ", cin=" + cin + ", salaire=" + salaire + ", gender=" + gender + ", telephone="
+				+ telephone + ", lieuNaissance=" + lieuNaissance + ", email=" + email + ", situationFamiliale="
+				+ situationFamiliale + ", nbrEnfant=" + nbrEnfant + ", dateEmbauche=" + dateEmbauche + "]";
 	}
-	
-	
+	public Employe() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	
 }

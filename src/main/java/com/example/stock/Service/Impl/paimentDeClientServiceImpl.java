@@ -1,5 +1,6 @@
 package com.example.stock.Service.Impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.example.stock.Bean.Client;
 import com.example.stock.Bean.heureConduite;
 import com.example.stock.Bean.paimentDeClient;
+import com.example.stock.Bean.paimentDeEmploye;
 import com.example.stock.Dao.paimentDeClientDao;
 import com.example.stock.Service.Facade.ClientService;
 import com.example.stock.Service.Facade.paimentDeClientService;
@@ -63,4 +65,5 @@ public class paimentDeClientServiceImpl implements paimentDeClientService{
 	public paimentDeClient findById(Long id) {
 		return paimentClientDao.findById(id).get();
 	}
+
 }
