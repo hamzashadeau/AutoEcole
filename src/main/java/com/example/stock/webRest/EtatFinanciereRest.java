@@ -1,5 +1,6 @@
 package com.example.stock.webRest;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,17 @@ import com.example.stock.Service.Facade.EtatFinanciereService;
 public class EtatFinanciereRest {
 @Autowired
 private EtatFinanciereService etatFinanciereService;
+
+
+@GetMapping("findByTypeAndDate/type/{type}/date/{date}")
+public List<etatFinanciere> findByTypeAndDate(@PathVariable String type,@PathVariable Date date) {
+	return etatFinanciereService.findByTypeAndDate(type, date);
+}
+
+@GetMapping("findByDate/{date}")
+public List<etatFinanciere> findByDate(@PathVariable Date date) {
+	return etatFinanciereService.findByDate(date);
+}
 
 public List<etatFinanciere> findAll() {
 	return etatFinanciereService.findAll();

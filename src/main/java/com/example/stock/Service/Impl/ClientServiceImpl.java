@@ -1,6 +1,7 @@
 package com.example.stock.Service.Impl;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +15,9 @@ import com.example.stock.Service.Facade.ClientService;
 
 @Service
 public class ClientServiceImpl implements ClientService {
-@Autowired
-private ClientDao clientDao;
+	@Autowired
+	private ClientDao clientDao;
+
 	@Override
 	public Client findByGeneratedcode(String generatedCode) {
 		return clientDao.findByGeneratedcode(generatedCode);
@@ -43,39 +45,41 @@ private ClientDao clientDao;
 
 	@Override
 	public int save(Client client) {
-		if(client.getId()!= null) {
+		if (client.getId() != null) {
 			return -1;
-		}else {
+		} else {
 			client.setImageType(this.type);
 			client.setImage(this.data);
-		 clientDao.save(client);
-		 return 1;
-	}
+			clientDao.save(client);
+			return 1;
+		}
 	}
 
 	@Override
 	public int edit(Client client) {
-		if(client.getId()== null) {
+		if (client.getId() == null) {
 			return -1;
-		}else {
+		} else {
 			client.setImage(this.data);
-		 clientDao.save(client);
-		 return 1;
-	}
+			clientDao.save(client);
+			return 1;
+		}
 	}
 
 	@Override
 	public int deleteById(Long id) {
 		clientDao.deleteById(id);
 		Client client = findById(id);
-		if(client== null) {
+		if (client == null) {
 			return 1;
-		}else {
-		return -1;
+		} else {
+			return -1;
+		}
 	}
-	}
+
 	private byte[] data;
 	private String type;
+
 	public int storeFile(MultipartFile file) throws Exception {
 		// Normalize file name
 		String fileName = StringUtils.cleanPath(file.getOriginalFilename());
@@ -87,18 +91,12 @@ private ClientDao clientDao;
 			}
 			this.data = file.getBytes();
 			this.type = file.getContentType();
-						//  try {
-			  //    Files.copy(file.getInputStream(), this.root.resolve(file.getOriginalFilename()));
-			    //} catch (Exception e) {
-			      //throw new RuntimeException("Could not store the file. Error: " + e.getMessage());
-			    //}
-//			LettreModel dbFile = new LettreModel(fileName, file.getContentType(), file.getBytes());
-	//		modelLettreDao.save(dbFile);
 			return 1;
 		} catch (IOException ex) {
 			throw new Exception("Could not store file " + fileName + ". Please try again!", ex);
 		}
 	}
+
 	@Override
 	public Client findById(Long id) {
 		return clientDao.findById(id).get();
@@ -109,4 +107,24 @@ private ClientDao clientDao;
 		return clientDao.findByImageName(image);
 	}
 
+	@Override
+	public List<Client> findByDateExamen(Date dateExamen) {
+		return clientDao.findByDateExamen(dateExamen);	
+		}
+Date date;
+	@Override
+	public List<Client> findByDateAujourdHui() {
+		this.date = new Date();
+		return clientDao.findByDateExamen(date);
+	}
+	public List<Client> findByDateSuivant(){
+		Long milliseconde = this.date.getTime() + 24*60*60*1000;
+		this.date = new Date(milliseconde);
+		return clientDao.findByDateExamen(date);
+	}
+	public List<Client> findByDateAvant(){
+		Long milliseconde = this.date.getTime() - 24*60*60*1000;
+		this.date = new Date(milliseconde);
+		return clientDao.findByDateExamen(date);
+	}
 }

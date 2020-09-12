@@ -1,5 +1,6 @@
 package com.example.stock.Service.Facade;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.web.multipart.MultipartFile;
@@ -19,4 +20,8 @@ public interface ClientService {
 	public Client findById(Long id);
 	public int storeFile(MultipartFile file) throws Exception;
 	public Client findByImageName(String image);
+	public List<Client> findByDateExamen(Date dateExamen);
+	public List<Client> findByDateAujourdHui();
+	public List<Client> findByDateAvant();
+	public List<Client> findByDateSuivant();
 }

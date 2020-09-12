@@ -1,6 +1,7 @@
 package com.example.stock.Service.Impl;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -82,6 +83,16 @@ public class EtatFinanciereServiceImpl implements EtatFinanciereService{
 			}
 		}
 		return resultats;
+	}
+
+	@Override
+	public List<etatFinanciere> findByDate(Date date) {
+		return this.etatFinancereDao.findByDate(date);
+	}
+
+	@Override
+	public List<etatFinanciere> findByTypeAndDate(String type, Date date) {
+		return this.etatFinancereDao.findByTypeAndDate(type, date);
 	}
 
 }

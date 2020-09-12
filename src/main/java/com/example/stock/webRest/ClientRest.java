@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletContext;
@@ -34,12 +35,27 @@ import com.example.stock.Service.Facade.ClientService;
 public class ClientRest {
 @Autowired
 private ClientService clientService;
-
-@PostMapping("/save")
+@GetMapping("findByDateAujourdHui")
+public List<Client> findByDateAujourdHui() {
+	return clientService.findByDateAujourdHui();
+}
+@GetMapping("findByDateAvant")
+public List<Client> findByDateAvant() {
+	return clientService.findByDateAvant();
+}
+@GetMapping("findByDateSuivant")
+public List<Client> findByDateSuivant() {
+	return clientService.findByDateSuivant();
+}
+@GetMapping("findByDateExamen/date/{dateExamen}")
+public List<Client> findByDateExamen(@PathVariable Date dateExamen) {
+	return clientService.findByDateExamen(dateExamen);
+}
+@PostMapping("save")
 public int save(@RequestBody Client client) {
 	return clientService.save(client);
 }
-@PostMapping("/edit")
+@PostMapping("edit")
 public int edit(@RequestBody Client client) {
 	return clientService.edit(client);
 }
@@ -51,7 +67,7 @@ public int deleteById(Long id) {
 public Client findById(@PathVariable Long id) {
 	return clientService.findById(id);
 }
-@PostMapping("/uploadFile")
+@PostMapping("uploadFile")
 public int storeFile(@RequestParam("file") MultipartFile file) throws Exception {
 	return clientService.storeFile(file);
 }

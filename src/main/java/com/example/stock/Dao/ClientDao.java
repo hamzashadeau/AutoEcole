@@ -1,5 +1,6 @@
 package com.example.stock.Dao;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,4 +19,5 @@ List<Client> findAll();
 public void deleteById(Long id);
 public Optional<Client> findById(Long id);
 public Client findByImageName(String image);
+public List<Client> findByDateExamen(Date dateExamen);
 }
