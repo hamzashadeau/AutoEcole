@@ -1,15 +1,18 @@
 package com.example.stock.Service.Impl;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.stock.Bean.Client;
+import com.example.stock.Bean.HistoriqueApplication;
 import com.example.stock.Bean.heureConduite;
 import com.example.stock.Bean.paimentDeClient;
 import com.example.stock.Bean.paimentDeEmploye;
+import com.example.stock.Dao.HistoriqueApplicationDao;
 import com.example.stock.Dao.paimentDeClientDao;
 import com.example.stock.Service.Facade.ClientService;
 import com.example.stock.Service.Facade.paimentDeClientService;
@@ -20,7 +23,8 @@ public class paimentDeClientServiceImpl implements paimentDeClientService{
 	private paimentDeClientDao paimentClientDao;
 	@Autowired
 	private ClientService clientDervice;
-
+	@Autowired
+	private HistoriqueApplicationDao historiqueApplicationDao;
 	@Override
 	public List<paimentDeClient> findByclientCin(String cin) {
 		return paimentClientDao.findByClientCin(cin);
@@ -37,6 +41,10 @@ public class paimentDeClientServiceImpl implements paimentDeClientService{
 			heureConduite.setMontantTotal(paimentDeClient.getPrixTotal());
 			this.clientDervice.edit(paimentDeClient);
 			paimentClientDao.save(heureConduite);
+			HistoriqueApplication historiqueApplication = new HistoriqueApplication();			
+			historiqueApplication.setDate(new Date());
+			historiqueApplication.setDescription("le client :" + paimentDeClient.getNomFR() + " " + paimentDeClient.getPrenomFR() + "est ajouté un paiment de" + heureConduite.getMontantpaye());
+			this.historiqueApplicationDao.save(historiqueApplication);
 		 return 1;
 	}
 	}
@@ -47,15 +55,24 @@ public class paimentDeClientServiceImpl implements paimentDeClientService{
 			return -1;
 		}else {
 			paimentClientDao.save(heureConduite);
+			HistoriqueApplication historiqueApplication = new HistoriqueApplication();			
+			historiqueApplication.setDate(new Date());
+			historiqueApplication.setDescription("modification un paiment de client :" + heureConduite.getClient().getNomFR() + " " + heureConduite.getClient().getPrenomFR());
+			this.historiqueApplicationDao.save(historiqueApplication);
 		 return 1;
 	}
 	}
 
 	@Override
 	public int deleteById(Long id) {
-		paimentClientDao.deleteById(id);
 		paimentDeClient heureConduite = findById(id);
-		if(heureConduite== null) {
+		HistoriqueApplication historiqueApplication = new HistoriqueApplication();			
+		historiqueApplication.setDate(new Date());
+		historiqueApplication.setDescription("suppression un paiment de client :" + heureConduite.getClient().getNomFR() + " " + heureConduite.getClient().getPrenomFR());
+		this.historiqueApplicationDao.save(historiqueApplication);
+		paimentClientDao.deleteById(id);
+		paimentDeClient heureConduite1 = findById(id);
+		if(heureConduite1 == null) {
 			return 1;
 		}else {
 		return -1;

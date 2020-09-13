@@ -10,13 +10,18 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.stock.Bean.Client;
+import com.example.stock.Bean.HistoriqueApplication;
 import com.example.stock.Dao.ClientDao;
+import com.example.stock.Dao.HistoriqueApplicationDao;
 import com.example.stock.Service.Facade.ClientService;
+import com.example.stock.Service.Facade.HistoriqueApplicationService;
 
 @Service
 public class ClientServiceImpl implements ClientService {
 	@Autowired
 	private ClientDao clientDao;
+	@Autowired
+	private HistoriqueApplicationDao historiqueApplicationDao;
 
 	@Override
 	public Client findByGeneratedcode(String generatedCode) {
@@ -54,6 +59,10 @@ public class ClientServiceImpl implements ClientService {
 			client.setImageType(this.type);
 			client.setImage(this.data);
 			clientDao.save(client);
+			HistoriqueApplication historiqueApplication = new HistoriqueApplication();
+			historiqueApplication.setDate(new Date());
+			historiqueApplication.setDescription("sauvgarder le client :" + client.getNomFR() + " " + client.getPrenomFR());
+			this.historiqueApplicationDao.save(historiqueApplication);
 			this.data = null;
 			return 1;
 		}
@@ -66,15 +75,24 @@ public class ClientServiceImpl implements ClientService {
 		} else {
 			//client.setImage(this.data);
 			clientDao.save(client);
+			HistoriqueApplication historiqueApplication = new HistoriqueApplication();			
+			historiqueApplication.setDate(new Date());
+			historiqueApplication.setDescription("modifier le client :" + client.getNomFR() + " " + client.getPrenomFR());
+			this.historiqueApplicationDao.save(historiqueApplication);
 			return 1;
 		}
 	}
 
 	@Override
 	public int deleteById(Long id) {
-		clientDao.deleteById(id);
 		Client client = findById(id);
-		if (client == null) {
+		HistoriqueApplication historiqueApplication = new HistoriqueApplication();			
+		historiqueApplication.setDate(new Date());
+		historiqueApplication.setDescription("supprimer le client :" + client.getNomFR() + " " + client.getPrenomFR());
+		this.historiqueApplicationDao.save(historiqueApplication);
+		clientDao.deleteById(id);
+		Client client1 = findById(id);
+		if (client1 == null) {
 			return 1;
 		} else {
 			return -1;
