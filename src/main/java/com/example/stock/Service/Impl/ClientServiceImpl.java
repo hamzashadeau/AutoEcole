@@ -45,12 +45,16 @@ public class ClientServiceImpl implements ClientService {
 
 	@Override
 	public int save(Client client) {
-		if (client.getId() != null) {
+		if (client.getId() != null || this.data == null) {
 			return -1;
 		} else {
+			if(client.getPrixRestantes() == null) {
+				client.setPrixRestantes(client.getPrixTotal());				
+			}
 			client.setImageType(this.type);
 			client.setImage(this.data);
 			clientDao.save(client);
+			this.data = null;
 			return 1;
 		}
 	}
@@ -60,7 +64,7 @@ public class ClientServiceImpl implements ClientService {
 		if (client.getId() == null) {
 			return -1;
 		} else {
-			client.setImage(this.data);
+			//client.setImage(this.data);
 			clientDao.save(client);
 			return 1;
 		}
