@@ -43,6 +43,7 @@ public class Client {
 	private String premisNumero;
 	private String numeroDeSession;
 	private String telephone;
+	private String lieuNaissance;
 	private String profession;
 	private String niveauEtude;
 	private String cin;
@@ -253,12 +254,19 @@ public class Client {
 	public void setTotalHeureConduite(Long totalHeureConduite) {
 		this.totalHeureConduite = totalHeureConduite;
 	}
+	public String getLieuNaissance() {
+		return lieuNaissance;
+	}
+	public void setLieuNaissance(String lieuNaissance) {
+		this.lieuNaissance = lieuNaissance;
+	}
 	public Client(Long id, byte[] image, String imageName, String imageType, String gender, String generatedcode,
 			String nomFR, String nomAR, String prenomFR, String prenomAR, String addresseFR, String adresseAR,
 			String email, Date dateNaissance, Date dateExamen, Date dateInscription, Boolean possedePermis,
-			String premisNumero, String numeroDeSession, String telephone, String profession, String niveauEtude,
-			String cin, String permisDemande, String langueExam, String statusCondidat, String moniteurTheorique,
-			String moniteurPratique, String vehicule, Double prixTotal, Double prixRestantes, Long totalHeureConduite) {
+			String premisNumero, String numeroDeSession, String telephone, String lieuNaissance, String profession,
+			String niveauEtude, String cin, String permisDemande, String langueExam, String statusCondidat,
+			String moniteurTheorique, String moniteurPratique, String vehicule, Double prixTotal, Double prixRestantes,
+			Long totalHeureConduite) {
 		super();
 		this.id = id;
 		this.image = image;
@@ -280,6 +288,7 @@ public class Client {
 		this.premisNumero = premisNumero;
 		this.numeroDeSession = numeroDeSession;
 		this.telephone = telephone;
+		this.lieuNaissance = lieuNaissance;
 		this.profession = profession;
 		this.niveauEtude = niveauEtude;
 		this.cin = cin;
@@ -301,11 +310,12 @@ public class Client {
 				+ addresseFR + ", adresseAR=" + adresseAR + ", email=" + email + ", dateNaissance=" + dateNaissance
 				+ ", dateExamen=" + dateExamen + ", dateInscription=" + dateInscription + ", possedePermis="
 				+ possedePermis + ", premisNumero=" + premisNumero + ", numeroDeSession=" + numeroDeSession
-				+ ", telephone=" + telephone + ", profession=" + profession + ", niveauEtude=" + niveauEtude + ", cin="
-				+ cin + ", permisDemande=" + permisDemande + ", langueExam=" + langueExam + ", statusCondidat="
-				+ statusCondidat + ", moniteurTheorique=" + moniteurTheorique + ", moniteurPratique=" + moniteurPratique
-				+ ", vehicule=" + vehicule + ", prixTotal=" + prixTotal + ", prixRestantes=" + prixRestantes
-				+ ", totalHeureConduite=" + totalHeureConduite + "]";
+				+ ", telephone=" + telephone + ", lieuNaissance=" + lieuNaissance + ", profession=" + profession
+				+ ", niveauEtude=" + niveauEtude + ", cin=" + cin + ", permisDemande=" + permisDemande + ", langueExam="
+				+ langueExam + ", statusCondidat=" + statusCondidat + ", moniteurTheorique=" + moniteurTheorique
+				+ ", moniteurPratique=" + moniteurPratique + ", vehicule=" + vehicule + ", prixTotal=" + prixTotal
+				+ ", prixRestantes=" + prixRestantes + ", totalHeureConduite=" + totalHeureConduite + "]";
 	}
+
 	
 	}

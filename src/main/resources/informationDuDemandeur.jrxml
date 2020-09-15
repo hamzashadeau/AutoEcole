@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.14.0.final using JasperReports Library version 6.14.0-2ab0d8625be255bf609c78e1181801213e51db8f  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="informationDuDemandeur" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cadb0415-44bf-4e5c-bdeb-b5f5a57e2e5e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="prenomFR" class="java.lang.String"/>
+	<field name="nomFR" class="java.lang.String"/>
+	<field name="addresseFR" class="java.lang.String"/>
+	<field name="cin" class="java.lang.String"/>
+	<field name="dateNaissance" class="java.util.Date"/>
+	<field name="permisDemande" class="java.lang.String"/>
+	<field name="nomAR" class="java.lang.String"/>
+	<field name="prenomAR" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="123" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="10" width="95" height="14" uuid="387ffff9-ac73-475b-85b2-1d0d9e509cf8"/>
+				<text><![CDATA[Royaume du Maroc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="24" width="126" height="16" uuid="1c471d37-dde4-4fc6-878f-d93050288edc"/>
+				<text><![CDATA[Ministère de l'Equipement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="40" width="100" height="14" uuid="60586f87-6f7e-4061-afae-6c4a831e1b4a"/>
+				<text><![CDATA[et du Transport]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="60" width="140" height="1" uuid="8cb65abd-0bc8-41c8-80c4-e54f385e3801"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="70" width="180" height="20" uuid="501fbbd8-342a-4b7f-8cdb-088a98e78d93"/>
+				<text><![CDATA[Derection des Transports Routiers]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="90" width="131" height="20" uuid="33e1d0f2-9b97-467d-9e74-e61bf928ed57"/>
+				<text><![CDATA[et de la Sécurité Routière]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="2" width="100" height="18" uuid="9851576b-6cfb-422e-a029-7c425c94212a"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[المملكة المغربية]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="20" width="90" height="20" uuid="a53405a7-96e4-42d2-89f5-9a5d38419c01"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[وزارة التجهيز و النقل]]></text>
+			</staticText>
+			<line>
+				<reportElement x="450" y="40" width="125" height="1" uuid="6d41f59e-29fa-4732-8f2c-073702a51647"/>
+			</line>
+			<staticText>
+				<reportElement x="470" y="50" width="100" height="20" uuid="878dd04e-d24c-4120-9f8c-fef26f5d5625"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[مديرية النقل عبر الطرق]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="65" width="100" height="15" uuid="eb6cb4f2-f473-47b3-8536-f6f1134ac599"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[و السلامة الطرقية]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="48" splitType="Stretch">
+			<line>
+				<reportElement x="10" y="0" width="540" height="1" uuid="b8261889-e3f0-437b-a404-3ff31caef034"/>
+			</line>
+			<line>
+				<reportElement x="10" y="24" width="540" height="1" uuid="6fb22702-dd1c-4f72-931b-12c355d5b07d"/>
+			</line>
+			<staticText>
+				<reportElement x="113" y="1" width="347" height="19" uuid="84d86eaf-6de2-4a39-8655-eee1c58959a1"/>
+				<textElement>
+					<font fontName="arial1" size="12"/>
+				</textElement>
+				<text><![CDATA[demande de: Délivrance du permis de conduire طلب  ]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="461" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="50" width="550" height="140" backcolor="rgba(255, 255, 255, 0.0)" uuid="f0c4da94-794d-409e-b3de-dd4f065729ec"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="60" width="100" height="14" uuid="2240977b-105e-4207-9dbd-9895fe7e6204"/>
+				<text><![CDATA[Prénom: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="60" width="84" height="14" uuid="d1d80571-d6b7-4ca7-9986-67080505cadf"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[:الإسم الشخصي ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="80" width="100" height="14" uuid="9b324df8-5be1-458d-9777-2efb4453b07f"/>
+				<text><![CDATA[Nom: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="80" width="84" height="14" uuid="7ac089fa-f2c7-4a4a-ae47-cb8771a230a8"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[:الإسم العائلي ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="120" width="100" height="14" uuid="4218a737-938b-437b-8a1c-1cf32b4d16ab"/>
+				<text><![CDATA[Cartes d'identité: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="100" width="84" height="14" uuid="287fd24c-0d4a-4c33-9dc3-effe9967aec2"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[:مزداد بتاريخ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="100" width="100" height="14" uuid="5636acc3-ee90-4faf-825a-7ca0e84cb2d3"/>
+				<text><![CDATA[Né (e) le: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="461" y="120" width="84" height="14" uuid="ba61b0ae-47b7-4a3b-aad1-a7a841936040"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[:بطاقة التعريف رقم ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="140" width="100" height="14" uuid="a4162780-43f7-404d-a960-198a902b76aa"/>
+				<text><![CDATA[Résident à: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="140" width="90" height="14" uuid="82a64109-c97f-4717-959c-3d78e669a49c"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[:القاطن ب ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="160" width="100" height="15" uuid="aaf25604-143e-4b7f-b7bc-0fcfef6c8af6"/>
+				<text><![CDATA[Catégorie demandé :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="160" width="84" height="14" uuid="a3b691e3-9307-4c3a-a2b8-4c82ab8a7f81"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[:الصنف المطلوب ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="60" width="100" height="14" uuid="26f9311b-d166-4088-adc6-04f8324b60ba"/>
+				<textFieldExpression><![CDATA[$F{prenomFR}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="81" width="100" height="13" uuid="1e117bb6-47d2-4b93-8fa2-3d66f46d462d"/>
+				<textFieldExpression><![CDATA[$F{nomFR}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="100" width="100" height="20" uuid="3c5c8685-04e3-4b77-8164-34dc01dc6c1c"/>
+				<textFieldExpression><![CDATA[$F{dateNaissance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="112" y="120" width="85" height="14" uuid="7e4cdf0c-fd31-44ad-bcdd-0b20de31afc3"/>
+				<textFieldExpression><![CDATA[$F{cin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="120" width="70" height="14" uuid="c52ce30d-c9bd-479b-8a86-8915db2317fa"/>
+				<textFieldExpression><![CDATA[$F{cin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="140" width="230" height="14" uuid="a3e993b7-8bbe-4848-a828-b67e5935216d"/>
+				<textFieldExpression><![CDATA[$F{addresseFR}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="160" width="100" height="20" uuid="388e414c-7446-453d-bd3d-b86c7504cb36"/>
+				<textFieldExpression><![CDATA[$F{permisDemande}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="60" width="100" height="14" uuid="99424c17-59f0-402a-8c34-dc57eef53bc9"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prenomAR}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="80" width="80" height="14" uuid="3d19ca44-e0a7-4508-aac1-ed1cb4fb603d"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomAR}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Opaque" x="13" y="260" width="126" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="525e4249-5c06-4ac6-bf11-9e5b38af7cc3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="343" y="282" width="220" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="0f86c3fe-250b-4a05-9f96-88232f2bba41"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="183" y="192" width="200" height="42" backcolor="rgba(255, 255, 255, 0.0)" uuid="8e3e48a4-503b-4732-b8eb-84c67682574a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="203" y="192" width="180" height="20" uuid="f9e65043-7a26-4a05-9ddc-2e28c11e524e"/>
+				<textElement>
+					<font fontName="arial1" size="14"/>
+				</textElement>
+				<text><![CDATA[معلومات حول رخصة السياقة]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="212" width="189" height="22" uuid="e078247d-55d6-410d-9d52-349e582a1e60"/>
+				<text><![CDATA[Information sur le permis de conduire]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Opaque" x="13" y="260" width="550" height="197" backcolor="rgba(255, 255, 255, 0.0)" uuid="5612d49f-8d3c-4b5e-b300-c56178cdbd6e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="343" y="304" width="220" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="b57b7b59-d553-4fe3-be14-ea5373722dcf"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="23" y="263" width="103" height="17" uuid="f55526f0-ea84-4cba-9cc3-8cafbccce101"/>
+				<textElement>
+					<font fontName="arial1" size="12"/>
+				</textElement>
+				<text><![CDATA[Catégorie     الصنف]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Opaque" x="139" y="260" width="204" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="e65e3818-3e3c-4887-8255-ca20722f74c7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="343" y="260" width="220" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="f39ba388-19a9-40e0-af15-77d408d153c7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="13" y="282" width="126" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="c639afe4-04f9-4035-9ca0-7fe4f839b477"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="13" y="304" width="126" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="627f9e2a-dbc2-426e-a452-d50b98cced3d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="13" y="326" width="126" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="b93c779a-01c3-4a89-9559-29caf65787dd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="13" y="348" width="126" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="dc18e9d4-ce07-42fa-a083-c9c655586f7e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="13" y="370" width="126" height="24" backcolor="rgba(255, 255, 255, 0.0)" uuid="0cae41e9-9315-44f9-a215-0dab7f70d0b3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="13" y="394" width="126" height="21" backcolor="rgba(255, 255, 255, 0.0)" uuid="9256840d-5910-456b-941b-89625e6b4b6d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="73" y="282" width="30" height="22" uuid="50b024d1-ff55-4c1b-9456-44565183c852"/>
+				<text><![CDATA[A1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="306" width="30" height="22" uuid="92f287d7-e57b-4ab8-8928-646a7a06cdcd"/>
+				<text><![CDATA[A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="326" width="30" height="22" uuid="32309d96-e1e8-4089-a84b-8348103b1514"/>
+				<text><![CDATA[B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="348" width="30" height="22" uuid="06aa690c-49fd-4b64-8b1c-3b09c2c77c79"/>
+				<text><![CDATA[C]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="372" width="30" height="22" uuid="1529934f-b551-4435-bfef-aaa5a837370b"/>
+				<text><![CDATA[D]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="395" width="30" height="22" uuid="de9286fe-b76e-4ecc-9ab3-2e1d8ddf521d"/>
+				<text><![CDATA[E(B)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Opaque" x="13" y="415" width="126" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="3b3d4bf0-afec-46cb-a02f-4c36bb41d41d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="13" y="437" width="126" height="20" backcolor="rgba(255, 255, 255, 0.0)" uuid="562141a8-a407-46c7-904c-386bafbcfa8a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="73" y="418" width="30" height="22" uuid="298ce4db-6fd1-459e-af50-986f14e1cbce"/>
+				<text><![CDATA[E(C)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="439" width="30" height="22" uuid="a9ee5913-9982-4c28-8c58-4d406980c27c"/>
+				<text><![CDATA[E(D)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Opaque" x="139" y="282" width="204" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="c9762281-8e7d-41c5-bd58-fd496099c22b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="139" y="304" width="204" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="0584957d-293d-4d96-855d-2cb031dc8f2f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="139" y="326" width="204" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="b874e0a3-9ad6-45ab-865d-a82406eaca71"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="139" y="348" width="204" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="994b57cb-b372-49c6-abbb-79a72a0b6642"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="139" y="371" width="204" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="2db25cdf-749b-4073-b7c3-319e862c97a7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="139" y="393" width="204" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="b0119ac1-a214-438c-893c-768fe28f2586"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="139" y="415" width="204" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="bc160c82-c3e7-4c24-946b-cea04f3bf363"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="140" y="437" width="203" height="20" backcolor="rgba(255, 255, 255, 0.0)" uuid="87e52dcd-fac3-425e-8182-3e8a4b13bd42"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="343" y="326" width="220" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="2ee9c2f8-0e96-45df-9d13-4ff0398ff7ec"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="343" y="348" width="220" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="2f215f77-1b7a-4170-9b67-30086fba0873"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="343" y="371" width="220" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="7d21f028-0612-403a-821c-dd0398a39d76"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="343" y="393" width="220" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="c1244cbd-f874-4c00-a6ac-bbcce95f6105"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="343" y="415" width="220" height="22" backcolor="rgba(255, 255, 255, 0.0)" uuid="420bfe4f-ddc9-40ea-aaa9-968c0d04a9d3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="143" y="264" width="198" height="16" uuid="882bad79-f36a-4682-8684-561c7c0dd5a8"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[Lieu de délivrance    مكان التسليم]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="265" width="187" height="15" uuid="ea26c5eb-3035-4dd0-a38c-e8daeb6ac4c8"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[Date de délivrance  تاريخ التسليم]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="238" width="100" height="22" uuid="4753b01f-eccb-4bb4-a461-cf2ed0593ec8"/>
+				<text><![CDATA[Perms de conduire N:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="393" y="238" width="100" height="14" uuid="390f534f-9949-47db-b13e-7c903f0a48dd"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[رخصة السياقة رقم]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Opaque" x="189" y="237" width="194" height="16" backcolor="rgba(255, 255, 255, 0.0)" uuid="73b0f378-b492-4b76-ac8e-b950bc9af66e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="183" y="0" width="147" height="50" backcolor="rgba(255, 255, 255, 0.0)" uuid="2215dbeb-0206-4466-b1aa-8082523d9416"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="186" y="10" width="140" height="20" uuid="2e5483ee-aaae-400a-ab98-e685edbdae67"/>
+				<textElement>
+					<font fontName="arial1" size="14"/>
+				</textElement>
+				<text><![CDATA[معلومات حول صاحب الطلب]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="30" width="140" height="20" uuid="3ef69c82-b143-4971-abcc-63901e13b0c4"/>
+				<text><![CDATA[Information sur le demandeur]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="14" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="49" y="26" width="145" height="17" uuid="5360eacd-ca8b-477a-8a80-525a431d0fe1"/>
+				<text><![CDATA[signature du demandeur ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="377" y="24" width="90" height="21" uuid="c98dd3dd-c85a-4a65-916c-08ab926c1bf6"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[توقيع صاحب الطلب]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="194" y="19" width="173" height="31" uuid="477b2426-1dc3-4e6f-9b8d-c29ac6df7113"/>
+			</rectangle>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="109" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="10" width="285" height="20" uuid="81762dd8-d5c4-44ba-8414-aefa9bab7b3c"/>
+				<text><![CDATA[Cadre réservé au paiment des droits de timbres et taxes ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="30" width="145" height="20" uuid="f14e9925-6bee-444d-9423-249fca41e3b3"/>
+				<text><![CDATA[PERFECTION MARRAKECH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="50" width="100" height="17" uuid="2240bb47-2b86-48fc-8c44-c9d328a94f3b"/>
+				<text><![CDATA[Quittance N]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="67" width="232" height="20" uuid="302cffd0-0876-456f-977f-d0a4cfdc8926"/>
+				<text><![CDATA[Rémunération des services rendus par METDTRSR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="90" width="100" height="19" uuid="e123704f-029b-49c8-a62b-fd4343435a79"/>
+				<text><![CDATA[Droit de timbre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="18" width="150" height="22" uuid="42d4e4e7-e7e4-4dd7-8e7b-d3bf8fb197f7"/>
+				<textElement>
+					<font fontName="arial1"/>
+				</textElement>
+				<text><![CDATA[إطار خاص باداء واجبات التنبر و الرسوم]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

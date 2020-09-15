@@ -2,6 +2,7 @@ package com.example.stock.webRest;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;
@@ -28,6 +29,8 @@ import org.springframework.web.multipart.MultipartFile;
 import com.example.stock.Bean.Client;
 import com.example.stock.Service.Facade.ClientService;
 
+import net.sf.jasperreports.engine.JRException;
+
 
 @RestController
 @CrossOrigin("http://localhost:4200")
@@ -35,6 +38,32 @@ import com.example.stock.Service.Facade.ClientService;
 public class ClientRest {
 @Autowired
 private ClientService clientService;
+
+@GetMapping("exportContrat/cin/{cin}")
+public byte[] exportContrat(@PathVariable String cin, HttpServletResponse response)
+		throws FileNotFoundException, JRException {
+	return clientService.exportContrat("pdf", cin, response);
+}
+@GetMapping("exportAttestationdeformation/cin/{cin}")
+public byte[] exportAttestationdeformation(@PathVariable String cin, HttpServletResponse response)
+		throws FileNotFoundException, JRException {
+	return clientService.exportAttestationdeformation("pdf", cin, response);
+}
+@GetMapping("exportcertificatMedicalAptitud/cin/{cin}")
+public byte[] exportcertificatMedicalAptitud(@PathVariable String cin, HttpServletResponse response)
+		throws FileNotFoundException, JRException {
+	return clientService.exportcertificatMedicalAptitud("pdf", cin, response);
+}
+
+public List<Client> findByCin(String cin) {
+	return clientService.findByCin(cin);
+}
+
+@GetMapping("exportInformationDuDemandeur/cin/{cin}")
+public byte[] exportInformationDuDemandeur(@PathVariable String cin,HttpServletResponse response)
+		throws FileNotFoundException, JRException,IOException {
+	return clientService.exportInformationDuDemandeur("pdf", cin,response);
+}
 @GetMapping("findByDateAujourdHui")
 public List<Client> findByDateAujourdHui() {
 	return clientService.findByDateAujourdHui();

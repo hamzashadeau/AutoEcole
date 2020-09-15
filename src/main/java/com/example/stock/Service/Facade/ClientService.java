@@ -1,12 +1,20 @@
 package com.example.stock.Service.Facade;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.stock.Bean.Client;
 import com.example.stock.Bean.Employe;
+
+import net.sf.jasperreports.engine.JRException;
 
 public interface ClientService {
 	Client findByGeneratedcode(String generatedCode);
@@ -24,4 +32,9 @@ public interface ClientService {
 	public List<Client> findByDateAujourdHui();
 	public List<Client> findByDateAvant();
 	public List<Client> findByDateSuivant();
+	public List<Client> findByCin(String cin);
+	public byte[] exportInformationDuDemandeur(String reportFormat, String cin,HttpServletResponse response) throws JRException, IOException;
+	public byte[] exportContrat(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException;
+	public byte[] exportAttestationdeformation(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException;
+	public byte[] exportcertificatMedicalAptitud(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException;
 }
