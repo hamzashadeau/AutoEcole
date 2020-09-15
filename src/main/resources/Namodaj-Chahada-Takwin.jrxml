@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.14.0.final using JasperReports Library version 6.14.0-2ab0d8625be255bf609c78e1181801213e51db8f  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Namodaj-Chahada-Takwin" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3a132fca-15a0-4fa7-93e5-98c46647420f">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="chahad-takwin-test" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4d634654-89c9-4a6c-badd-70c978162d9a">
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -20,176 +19,243 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="100" splitType="Stretch">
-			<staticText>
-				<reportElement x="80" y="0" width="400" height="50" uuid="3f421096-7731-45a5-8e72-b50f37cfc4b6"/>
-				<textElement textAlignment="Center">
-					<font fontName="arial1" size="30"/>
-				</textElement>
-				<text><![CDATA[شهادة نهاية التكوين : تعليم السياقة]]></text>
-			</staticText>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 		</band>
 	</title>
 	<pageHeader>
-		<band height="90" splitType="Stretch">
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="799" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<staticText>
-				<reportElement x="152" y="-31" width="400" height="30" uuid="3d403371-c202-4e8f-bb1c-7e2a2ec04ca8"/>
-				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
-				</textElement>
-				<text><![CDATA[تجارب المؤسسة او الاسم التجاري للمؤسسة : سيارة التعليم تامنصورت]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="152" y="-2" width="400" height="30" uuid="fbfdc89a-51a9-4548-8522-bec8780e21c8"/>
-				<textElement textAlignment="Right">
+				<reportElement x="70" y="190" width="400" height="30" uuid="e6a165b1-d815-41a1-b134-9e9679fd3032">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
-				<text><![CDATA[الرخصة : 5844]]></text>
+				<text><![CDATA[الفاكس : 0524203453 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="29" width="552" height="30" uuid="70b1b125-199a-41b4-807c-de5b32ef2368"/>
+				<reportElement x="0" y="160" width="552" height="30" uuid="4b5ae41b-b001-4542-a372-1a94cfea97f8"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15"/>
+				</textElement>
+				<text><![CDATA[في سجل الضريبة المهنية :  64800524 . رقم القيد في السجل التجاري : 98463 . المدينة : مراكش]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="129" width="552" height="30" uuid="6c52e63f-3400-41b2-aa1c-b2505eb0d908"/>
 				<textElement textAlignment="Right">
 					<font fontName="arial1" size="15"/>
 				</textElement>
 				<text><![CDATA[في السجل الوطني الخاص بمؤسسات تعليم السياقة : 5844]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="60" width="552" height="30" uuid="6b0fb00e-d756-4635-b427-7653abac783b"/>
+				<reportElement x="152" y="98" width="400" height="30" uuid="ffe3af58-102f-4573-9cdf-fb0e8b46c09b"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15"/>
-				</textElement>
-				<text><![CDATA[في سجل الضريبة المهنية :  64800524 . رقم القيد في السجل التجاري : 98463 . المدينة : مراكش]]></text>
-			</staticText>
-		</band>
-	</pageHeader>
-	<columnHeader>
-		<band height="507" splitType="Stretch">
-			<staticText>
-				<reportElement x="70" y="-1" width="400" height="30" uuid="fe38d295-b1e3-414f-be8f-0a879b9d4eb3"/>
-				<textElement textAlignment="Center">
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
-				<text><![CDATA[الفاكس : 0524203453 ]]></text>
+				<text><![CDATA[الرخصة : 5844]]></text>
 			</staticText>
-			<rectangle>
-				<reportElement x="130" y="40" width="310" height="120" uuid="09cca4d5-2e3d-47e1-886b-0b39a7051b19">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-			</rectangle>
 			<staticText>
-				<reportElement x="440" y="30" width="112" height="30" uuid="6bdbd4a4-0c45-47ef-a2a0-4137b2a447ee"/>
+				<reportElement x="152" y="69" width="400" height="30" uuid="7a625586-7bca-4f04-9e06-d7b4ab59bd5f"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="false"/>
+				</textElement>
+				<text><![CDATA[تجارب المؤسسة او الاسم التجاري للمؤسسة : سيارة التعليم تامنصورت]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="0" width="400" height="50" uuid="5cb34149-a8d9-4b29-b595-5b23c10384cb"/>
+				<textElement textAlignment="Center">
+					<font fontName="arial1" size="30"/>
+				</textElement>
+				<text><![CDATA[شهادة نهاية التكوين : تعليم السياقة]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="442" y="209" width="112" height="30" uuid="11652736-9b6d-46cd-a677-345e7880b37a"/>
 				<textElement textAlignment="Right">
 					<font fontName="arial1" size="15" isBold="true" isUnderline="true"/>
 				</textElement>
 				<text><![CDATA[القانوني للمؤسسة :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="130" y="42" width="300" height="30" uuid="72abf4a3-072c-452d-ac25-61e502b1ee9c"/>
-				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
-				</textElement>
-				<text><![CDATA[الاسم الشخصي : بشرى]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="130" y="135" width="300" height="25" uuid="20fe26e2-dd3a-41cc-bbab-4d8b537d7f73"/>
-				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
-				</textElement>
-				<text><![CDATA[الهاتف : 0672770102]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="130" y="104" width="300" height="30" uuid="6049d40d-ae8e-40d1-ac2f-b9e3bc126a3b"/>
-				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
-				</textElement>
-				<text><![CDATA[العنوان : الشطر1 رقم  30 تامنصورت  مراكش]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="130" y="73" width="300" height="30" uuid="9aa706e2-1e5a-4005-95a2-ea2330a5cac7"/>
+				<reportElement x="132" y="252" width="300" height="30" uuid="765715e7-1dc6-4266-8fb6-ef1162fa8bed"/>
 				<textElement textAlignment="Right">
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[الاسم العائلي : اوحمودو]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="450" y="160" width="112" height="30" uuid="92cc7a51-276e-49ae-9310-5c31d42b7b47"/>
+				<reportElement x="132" y="221" width="300" height="30" uuid="972e5622-8988-4236-8b65-635e2555a5d6"/>
 				<textElement textAlignment="Right">
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
-				<text><![CDATA[ان  السيد (ة) ]]></text>
+				<text><![CDATA[الاسم الشخصي : بشرى]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="350" y="190" width="212" height="30" uuid="ba9a6c73-6f2d-4684-8042-0bea1617954a"/>
+				<reportElement x="132" y="283" width="300" height="30" uuid="ed637646-5bc3-4198-a7d8-2b9df5bb7b2b"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[العنوان : الشطر1 رقم  30 تامنصورت  مراكش]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="314" width="300" height="25" uuid="6a4908e4-930c-4556-97d3-d50adbec2a0c"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[الهاتف : 0672770102]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="132" y="219" width="310" height="120" uuid="85b6e1d2-b6b9-4bd6-9759-127ff87cea6f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="135" y="220" width="300" height="30" uuid="41ed8f67-9340-42a5-9e2c-1299eaff249d"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[الاسم الشخصي : بشرى]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="135" y="251" width="300" height="30" uuid="7653e5a5-b886-4eed-a458-26c9bea70e87"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[الاسم العائلي : اوحمودو]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="135" y="282" width="300" height="30" uuid="f5037f16-92f7-4fd3-a9e4-48e11b3a5de4"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[العنوان : الشطر1 رقم  30 تامنصورت  مراكش]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="135" y="313" width="300" height="25" uuid="77a95a58-8d76-4ba0-9624-e065a4ac9499"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[الهاتف : 0672770102]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="354" width="112" height="30" uuid="0754fe9b-7a15-4157-b69b-2e4eb4e3a992"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ان  السيد (ة)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="384" width="212" height="30" uuid="79ac7706-8e60-4ec3-a375-35d073ceeb92"/>
 				<textElement textAlignment="Right">
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[الحامل للبطاقة الوطنية للتعريف رقم :.......................................]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="10" y="253" width="552" height="30" uuid="24c713d0-0532-4f34-9b18-f7c2da6c8938"/>
-				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
-				</textElement>
-				<text><![CDATA[عقد تكوين الموقع بين الطرفين بتاريخ :.........................................................]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="10" y="223" width="552" height="30" uuid="8a81ed93-29ef-49df-9ab1-43e46ec475ae"/>
+				<reportElement x="0" y="417" width="552" height="30" uuid="ad754d22-a914-4d1a-8749-6a01e72893d7"/>
 				<textElement textAlignment="Right">
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[الممنوح من طرف الإدارة (Référence Web) ............................................]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="10" y="378" width="552" height="30" uuid="25ef4cf7-4ea7-4dc1-95d1-ad39fa6e59e2"/>
+				<reportElement x="0" y="447" width="552" height="30" uuid="3373b50f-0938-4e24-a513-28e062b826c2"/>
 				<textElement textAlignment="Right">
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
-				<text><![CDATA[.اسم المدرب:.   بشرى اوحمودو                 .رقم رخصته]]></text>
+				<text><![CDATA[عقد تكوين الموقع بين الطرفين بتاريخ :.........................................................]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="10" y="348" width="552" height="30" uuid="210d65f6-51f3-41a3-ae90-77ef79fd6f10"/>
-				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
-				</textElement>
-				<text><![CDATA[ قد اشرف على التكوين النظري  المدرب الوارد اسمه بعده :]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="10" y="315" width="552" height="30" uuid="0a98eb6f-acba-4159-aaed-a4fe929a0f79"/>
-				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
-				</textElement>
-				<text><![CDATA[بالنسبة للتكوين النظري .20. ساعة بالنسبة للتكوين التطبيقي طبقا للبرنامج الوطني لتعليم السياقة.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="10" y="285" width="552" height="30" uuid="69dae47f-878a-4122-a844-ffcc6afcd105"/>
+				<reportElement x="0" y="479" width="552" height="30" uuid="2e65d953-a931-42a7-9392-11b9060f82ac"/>
 				<textElement textAlignment="Right">
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[قد تلق(ت) بهده المؤسسة دروسا نظرية و تطبيقية في تعليم سياقة المركبات من صنف.B.بما مجموع  20 ساعة]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="10" y="474" width="552" height="30" uuid="a98f16cf-27cd-4245-ab64-a99554a2c776"/>
+				<reportElement x="0" y="509" width="552" height="30" uuid="5b45e2a5-5269-4220-954d-5433479e37a6"/>
 				<textElement textAlignment="Right">
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
-				<text><![CDATA[حيت تلق(ت) تكوينه (ها) بواسطة المركبة من صنف.B .المسجلة تحت رقم: 26ب92732 في اسم المؤسسة]]></text>
+				<text><![CDATA[بالنسبة للتكوين النظري .20. ساعة بالنسبة للتكوين التطبيقي طبقا للبرنامج الوطني لتعليم السياقة.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="10" y="444" width="552" height="30" uuid="39ac28a3-6ae2-4041-8526-f205b7c196ff"/>
+				<reportElement x="0" y="542" width="552" height="30" uuid="3b7bc11c-5907-4a6e-9ccd-998fa9223f44"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ قد اشرف على التكوين النظري  المدرب الوارد اسمه بعده :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="572" width="552" height="30" uuid="fd16a257-631f-4b8d-af35-7d9b7365c51c"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.اسم المدرب:.   بشرى اوحمودو                 .رقم رخصته]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="605" width="552" height="30" uuid="fce7aaee-f7c6-43ff-b67b-5d4e41397c48"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[و اشرف على التكوين التطبيقي المدرب الوارد اسمه بعده .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="638" width="552" height="30" uuid="8299a5ba-2bda-4859-a7d1-198708cc73fd"/>
 				<textElement textAlignment="Right">
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[اسم المدرب:  بشرى اوحمودو.          رقم رخصته :.       9454.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="10" y="411" width="552" height="30" uuid="6f156c8d-acc9-4757-a026-bc28c22f77e9"/>
+				<reportElement x="0" y="668" width="552" height="30" uuid="9e683946-d842-4076-8c9f-880943048eab"/>
 				<textElement textAlignment="Right">
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
-				<text><![CDATA[و اشرف على التكوين التطبيقي المدرب الوارد اسمه بعده .]]></text>
+				<text><![CDATA[حيت تلق(ت) تكوينه (ها) بواسطة المركبة من صنف.B .المسجلة تحت رقم: 26ب92732 في اسم المؤسسة]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="732" width="552" height="30" uuid="6fbad22e-94d2-446f-97d2-51079f6147f6"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[تابع المؤسسة]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="730" width="210" height="30" uuid="73b387ad-6921-44cb-8a02-013073c6dec9"/>
+				<textElement textAlignment="Right">
+					<font fontName="arial1" size="15" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[حرر ب مراكش بتاريخ]]></text>
+			</staticText>
+			<textField pattern="dd / MM / yyyy">
+				<reportElement x="17" y="734" width="100" height="30" uuid="4e55cd67-088b-44a7-90c3-13ab7985768f"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="240" y="760" width="210" height="21" uuid="c979c3bc-8c91-4ee3-80cc-0727ce48c724"/>
+				<textElement textAlignment="Center">
+					<font fontName="arial1" size="15" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[توقيع المرشح]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="370" y="165" width="90" height="20" uuid="422a1da0-bc9c-4830-a1b1-e376962f1b02">
+				<reportElement x="380" y="354" width="90" height="20" uuid="407432f3-6c07-4d3c-83cb-3acd97b3bbd7">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9961ab2e-2265-4b22-9cc4-90579059457f"/>
 				</reportElement>
 				<textElement>
@@ -198,7 +264,7 @@
 				<textFieldExpression><![CDATA[$F{nomAR}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="240" y="165" width="120" height="20" uuid="3cbec773-4af5-4945-a0dc-77a1d89a2bbf">
+				<reportElement x="250" y="354" width="120" height="20" uuid="59014bc0-13c3-46d9-a66d-abb5f635f689">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="48778394-f986-47cb-8b1b-6ab3574bc96a"/>
 				</reportElement>
 				<textElement>
@@ -207,7 +273,7 @@
 				<textFieldExpression><![CDATA[$F{prenomAR}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="240" y="193" width="100" height="20" uuid="a65faf9e-725d-4d73-9a5e-1e6fd7e346c6">
+				<reportElement x="250" y="382" width="100" height="20" uuid="731d56dd-ae27-4877-a09b-618a0176fed6">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="613f422c-54f8-41d7-9ce8-3b568826fe47"/>
 				</reportElement>
 				<textElement>
@@ -216,47 +282,20 @@
 				<textFieldExpression><![CDATA[$F{cin}]]></textFieldExpression>
 			</textField>
 		</band>
-	</columnHeader>
-	<detail>
-		<band height="26" splitType="Stretch"/>
 	</detail>
 	<columnFooter>
-		<band height="45" splitType="Stretch">
-			<staticText>
-				<reportElement x="-1" y="7" width="552" height="30" uuid="38d65f22-c84d-4199-93b8-02d41484694e"/>
-				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
-				</textElement>
-				<text><![CDATA[تابع المؤسسة]]></text>
-			</staticText>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 		</band>
 	</columnFooter>
 	<pageFooter>
-		<band height="60" splitType="Stretch">
-			<staticText>
-				<reportElement x="5" y="5" width="210" height="30" uuid="3f59f408-d863-4f2a-a0d1-e0c019326657"/>
-				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false" isItalic="false"/>
-				</textElement>
-				<text><![CDATA[حرر ب مراكش بتاريخ]]></text>
-			</staticText>
-			<textField pattern="dd / MM / yyyy">
-				<reportElement x="15" y="9" width="100" height="30" uuid="41ad08b5-b17b-41e3-87c6-37b13efc0935"/>
-				<textElement>
-					<font size="11" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="90" y="39" width="210" height="21" uuid="33501cff-9736-4ca5-a7fe-a09fa73ee1b1"/>
-				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false" isItalic="false"/>
-				</textElement>
-				<text><![CDATA[توقيع المرشح]]></text>
-			</staticText>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 		</band>
 	</pageFooter>
 	<summary>
-		<band height="42" splitType="Stretch"/>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
 	</summary>
 </jasperReport>

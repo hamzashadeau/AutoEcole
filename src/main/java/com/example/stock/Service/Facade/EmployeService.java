@@ -2,6 +2,8 @@ package com.example.stock.Service.Facade;
 
 import java.util.List;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import com.example.stock.Bean.Employe;
 
 public interface EmployeService {
@@ -13,5 +15,6 @@ public interface EmployeService {
 	public int edit(Employe employe);
 	public int deleteById(Long id);
 	public Employe findById(Long id);
+	public int storeFile(MultipartFile file) throws Exception;
 
 }

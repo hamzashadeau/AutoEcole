@@ -282,7 +282,7 @@
 				<reportElement x="174" y="728" width="376" height="1" uuid="11436ca0-edc3-467c-92c9-08dab49238b4"/>
 			</line>
 			<textField>
-				<reportElement x="370" y="360" width="90" height="21" uuid="25c13379-0e2a-433c-869d-4aa35f1dc4f1"/>
+				<reportElement x="410" y="356" width="70" height="21" uuid="25c13379-0e2a-433c-869d-4aa35f1dc4f1"/>
 				<textElement>
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
@@ -317,7 +317,7 @@
 				<text><![CDATA[بتاريخ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="240" y="360" width="120" height="20" uuid="426710a5-050d-40a0-9172-321ef31f3d92"/>
+				<reportElement x="320" y="356" width="80" height="20" uuid="426710a5-050d-40a0-9172-321ef31f3d92"/>
 				<textElement>
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
@@ -331,7 +331,7 @@
 				<textFieldExpression><![CDATA[$F{dateNaissance}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="150" y="381" width="150" height="22" uuid="66c9767d-27da-4eea-9c5f-c6836733fcea"/>
+				<reportElement x="172" y="381" width="140" height="22" uuid="66c9767d-27da-4eea-9c5f-c6836733fcea"/>
 				<textElement>
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>

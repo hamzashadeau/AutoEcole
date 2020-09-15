@@ -216,6 +216,7 @@ public class ClientServiceImpl implements ClientService {
 			if(client.getPrixRestantes() == null) {
 				client.setPrixRestantes(client.getPrixTotal());				
 			}
+			client.setTotalHeureConduite((long) 0);
 			client.setImageType(this.type);
 			client.setImage(this.data);
 			clientDao.save(client);

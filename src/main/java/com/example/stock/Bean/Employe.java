@@ -1,5 +1,6 @@
 package com.example.stock.Bean;
 
+import java.util.Arrays;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -17,6 +18,9 @@ public class Employe {
 	private String nomFR;
 	private String nomAR;
 	private String prenomFR;
+	private byte[] image;
+	private String imageName;
+	private String imageType;
 	private String prenomAR;
 	private String addresseFR;
 	private String adresseAR;
@@ -35,6 +39,31 @@ public class Employe {
 	public String getSituationFamiliale() {
 		return situationFamiliale;
 	}
+	
+	public byte[] getImage() {
+		return image;
+	}
+
+	public void setImage(byte[] image) {
+		this.image = image;
+	}
+
+	public String getImageName() {
+		return imageName;
+	}
+
+	public void setImageName(String imageName) {
+		this.imageName = imageName;
+	}
+
+	public String getImageType() {
+		return imageType;
+	}
+
+	public void setImageType(String imageType) {
+		this.imageType = imageType;
+	}
+
 	public void setSituationFamiliale(String situationFamiliale) {
 		this.situationFamiliale = situationFamiliale;
 	}
@@ -135,14 +164,22 @@ public class Employe {
 	public void setDateEmbauche(Date dateEmbauche) {
 		this.dateEmbauche = dateEmbauche;
 	}
-	public Employe(Long id, String nomFR, String nomAR, String prenomFR, String prenomAR, String addresseFR,
-			String adresseAR, Date dateNaissance, String cin, Double salaire, String gender, String telephone,
-			String lieuNaissance, String email, String situationFamiliale, int nbrEnfant, Date dateEmbauche) {
+	public Employe() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Employe(Long id, String nomFR, String nomAR, String prenomFR, byte[] image, String imageName,
+			String imageType, String prenomAR, String addresseFR, String adresseAR, Date dateNaissance, String cin,
+			Double salaire, String gender, String telephone, String lieuNaissance, String email,
+			String situationFamiliale, int nbrEnfant, Date dateEmbauche) {
 		super();
 		this.id = id;
 		this.nomFR = nomFR;
 		this.nomAR = nomAR;
 		this.prenomFR = prenomFR;
+		this.image = image;
+		this.imageName = imageName;
+		this.imageType = imageType;
 		this.prenomAR = prenomAR;
 		this.addresseFR = addresseFR;
 		this.adresseAR = adresseAR;
@@ -159,15 +196,12 @@ public class Employe {
 	}
 	@Override
 	public String toString() {
-		return "Employe [id=" + id + ", nomFR=" + nomFR + ", nomAR=" + nomAR + ", prenomFR=" + prenomFR + ", prenomAR="
+		return "Employe [id=" + id + ", nomFR=" + nomFR + ", nomAR=" + nomAR + ", prenomFR=" + prenomFR + ", image="
+				+ Arrays.toString(image) + ", imageName=" + imageName + ", imageType=" + imageType + ", prenomAR="
 				+ prenomAR + ", addresseFR=" + addresseFR + ", adresseAR=" + adresseAR + ", dateNaissance="
 				+ dateNaissance + ", cin=" + cin + ", salaire=" + salaire + ", gender=" + gender + ", telephone="
 				+ telephone + ", lieuNaissance=" + lieuNaissance + ", email=" + email + ", situationFamiliale="
 				+ situationFamiliale + ", nbrEnfant=" + nbrEnfant + ", dateEmbauche=" + dateEmbauche + "]";
-	}
-	public Employe() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 }

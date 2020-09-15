@@ -1,10 +1,13 @@
 package com.example.stock.Service.Impl;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.example.stock.Bean.Employe;
 import com.example.stock.Bean.HistoriqueApplication;
@@ -26,7 +29,25 @@ private HistoriqueApplicationDao historiqueApplicationDao;
 	public Employe findByPrenomFR(String prenomFR) {
 		return employeDao.findByPrenomFR(prenomFR);
 	}
+	private byte[] data;
+	private String type;
 
+	public int storeFile(MultipartFile file) throws Exception {
+		// Normalize file name
+		String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+
+		try {
+			// Check if the file's name contains invalid characters
+			if (fileName.contains("..")) {
+				throw new Exception("Sorry! Filename contains invalid path sequence " + fileName);
+			}
+			this.data = file.getBytes();
+			this.type = file.getContentType();
+			return 1;
+		} catch (IOException ex) {
+			throw new Exception("Could not store file " + fileName + ". Please try again!", ex);
+		}
+	}
 	@Override
 	public Employe findByPrenomFRAndNomFR(String prenomFR, String nomFR) {
 		return employeDao.findByPrenomFRAndNomFR(prenomFR, nomFR);
@@ -42,7 +63,9 @@ private HistoriqueApplicationDao historiqueApplicationDao;
 		if(employe.getId()!= null) {
 			return -1;
 		}else {
-		 employeDao.save(employe);
+			employe.setImageType(this.type);
+			employe.setImage(this.data);
+			employeDao.save(employe);
 			HistoriqueApplication historiqueApplication = new HistoriqueApplication();			
 			historiqueApplication.setDate(new Date());
 			historiqueApplication.setDescription("sauvgarder employe :" + employe.getNomFR() + " " + employe.getPrenomFR());

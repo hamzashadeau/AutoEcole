@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.example.stock.Bean.Employe;
 import com.example.stock.Service.Facade.EmployeService;
@@ -29,7 +31,10 @@ private EmployeService employeService;
 	public Employe findById(@PathVariable Long id) {
 		return employeService.findById(id);
 	}
-	
+	@PostMapping("uploadFile")
+	public int storeFile(@RequestParam("file") MultipartFile file) throws Exception {
+		return employeService.storeFile(file);
+	}
 	@PostMapping("edit")
 public int edit(Employe employe) {
 		return employeService.edit(employe);
@@ -51,8 +56,6 @@ public Employe findByPrenomFRAndNomFR(String prenomFR, String nomFR) {
 }
 @PostMapping("save")
 public int save(@RequestBody Employe employe) {
-	System.out.println(employe.getAdresseAR());
-	System.out.println(employe.getNomAR());
 	return employeService.save(employe);
 }
 
