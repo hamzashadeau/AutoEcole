@@ -1,7 +1,9 @@
 package com.example.stock.Service.Impl;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -96,23 +98,34 @@ public class EtatFinanciereServiceImpl implements EtatFinanciereService{
 	}
 
 	@Override
-	public List<etatFinanciere> findAllGainsByTypeAndmoisAndAnnee(String type, int mois, int annee) {
+	public List<etatFinanciere> findAllGainsByTypeAndmoisAndAnnee(String type, Integer mois, Integer annee) {
 		List<etatFinanciere> etats = this.findByType(type);
+		System.out.println(etats);
 		List<etatFinanciere> resultats = new ArrayList<etatFinanciere>();
 		for (etatFinanciere etat : etats) {
-			if((etat.getDate().getMonth()+1) == mois && (etat.getDate().getYear()) == annee) {
+			if(((this.getMonth(etat.getDate())+1) == mois) && (this.getYear(etat.getDate()).equals(annee))) {
 				resultats.add(etat);
 			}
 		}
 		return resultats;
 	}
+	public static Integer getYear(Date d) {
+		Calendar c = new GregorianCalendar();
+		c.setTime(d);
+		return c.get(Calendar.YEAR);
+	}
+	public static Integer getMonth(Date d) {
+		Calendar c = new GregorianCalendar();
+		c.setTime(d);
+		return c.get(Calendar.MONTH);
+	}
 
 	@Override
-	public List<etatFinanciere> findAllDespensesByTypeAndmoisAndAnnee(String type, int mois, int annee) {
+	public List<etatFinanciere> findAllDespensesByTypeAndmoisAndAnnee(String type, Integer mois, Integer annee) {
 		List<etatFinanciere> etats = this.findByType(type);
 		List<etatFinanciere> resultats = new ArrayList<etatFinanciere>();
 		for (etatFinanciere etat : etats) {
-			if((etat.getDate().getMonth()+1) == mois && (etat.getDate().getYear()) == annee) {
+			if(((this.getMonth(etat.getDate())+1) == mois) && (this.getYear(etat.getDate()).equals(annee))) {
 				resultats.add(etat);
 			}
 		}

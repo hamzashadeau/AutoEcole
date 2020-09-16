@@ -63,11 +63,11 @@ public List<etatFinanciere> findAllDespensesByTypeAndmois(@PathVariable int mois
 	return etatFinanciereService.findAllDespensesByTypeAndmois("despenses", mois);
 }
 @GetMapping("findAllGainsByTypeAndmoisAndAnnee/mois/{mois}/annee/{annee}")
-public List<etatFinanciere> findAllGainsByTypeAndmoisAndAnnee(@PathVariable int mois,@PathVariable int annee) {
+public List<etatFinanciere> findAllGainsByTypeAndmoisAndAnnee(@PathVariable Integer mois,@PathVariable Integer annee) {
 	return etatFinanciereService.findAllGainsByTypeAndmoisAndAnnee("gains", mois, annee);
 }
 @GetMapping("findAllDespensesByTypeAndmoisAndAnnee/mois/{mois}/annee/{annee}")
-public List<etatFinanciere> findAllDespensesByTypeAndmoisAndAnnee(@PathVariable int mois,@PathVariable int annee) {
+public List<etatFinanciere> findAllDespensesByTypeAndmoisAndAnnee(@PathVariable Integer mois,@PathVariable Integer annee) {
 	return etatFinanciereService.findAllDespensesByTypeAndmoisAndAnnee("despenses", mois, annee);
 }
 }

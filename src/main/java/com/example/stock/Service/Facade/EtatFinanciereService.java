@@ -15,8 +15,8 @@ public interface EtatFinanciereService {
 	public List<etatFinanciere> findByType(String type);
 	public List<etatFinanciere> findAllGainsByTypeAndmois(String type, int mois);
 	public List<etatFinanciere> findAllDespensesByTypeAndmois(String type, int mois);
-	public List<etatFinanciere> findAllGainsByTypeAndmoisAndAnnee(String type, int mois, int annee);
-	public List<etatFinanciere> findAllDespensesByTypeAndmoisAndAnnee(String type, int mois,int annee);
+	public List<etatFinanciere> findAllGainsByTypeAndmoisAndAnnee(String type, Integer mois, Integer annee);
+	public List<etatFinanciere> findAllDespensesByTypeAndmoisAndAnnee(String type, Integer mois,Integer annee);
 	public List<etatFinanciere> findByDate(Date date);
 	public List<etatFinanciere> findByTypeAndDate(String type,Date date);
 

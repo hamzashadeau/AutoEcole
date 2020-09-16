@@ -349,6 +349,7 @@ Date date;
 	public List<Client> findByDateInscription(Date dateInscription) {
 		return clientDao.findByDateInscription(dateInscription);
 	}
+	
 
 	@Override
 	public List<Client> findAllClientsBymoisAndAnnee(int mois, int annee) {
@@ -361,4 +362,9 @@ Date date;
 		}
 		return resultats;	
 		}
+
+	@Override
+	public List<Client> findByPermisDemande(String permisDemande) {
+		return clientDao.findByPermisDemande(permisDemande);
+	}
 }

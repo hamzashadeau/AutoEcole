@@ -39,6 +39,14 @@ public class ClientRest {
 @Autowired
 private ClientService clientService;
 
+@GetMapping("findByPermisDemande/permisDemande/{permisDemande}")
+public List<Client> findByPermisDemande(@PathVariable String permisDemande) {
+	return clientService.findByPermisDemande(permisDemande);
+}
+@GetMapping("findAllClientsBymoisAndAnnee/mois/{mois}/annee/{annee}")
+public List<Client> findAllClientsBymoisAndAnnee(@PathVariable int mois,@PathVariable int annee) {
+	return clientService.findAllClientsBymoisAndAnnee(mois, annee);
+}
 @GetMapping("findByDateInscription/dateInscription/{dateInscription}")
 public List<Client> findByDateInscription(@PathVariable Date dateInscription) {
 	return clientService.findByDateInscription(dateInscription);

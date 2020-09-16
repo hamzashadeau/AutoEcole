@@ -32,6 +32,7 @@ public interface ClientService {
 	public List<Client> findByDateExamen(Date dateExamen);
 	public List<Client> findByDateAujourdHui();
 	public List<Client> findByDateAvant();
+	public List<Client> findByPermisDemande(String permisDemande);
 	public List<Client> findByDateSuivant();
 	public List<Client> findByCin(String cin);
 	public byte[] exportInformationDuDemandeur(String reportFormat, String cin,HttpServletResponse response) throws JRException, IOException;
