@@ -13,6 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.example.stock.Bean.Client;
 import com.example.stock.Bean.Employe;
+import com.example.stock.Bean.etatFinanciere;
 
 import net.sf.jasperreports.engine.JRException;
 
@@ -38,4 +39,6 @@ public interface ClientService {
 	public byte[] exportAttestationdeformation(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException;
 	public byte[] exportcertificatMedicalAptitud(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException;
 	public List<Client> findByDateInscription(Date dateInscription);
+	public List<Client> findAllClientsBymoisAndAnnee(int mois,int annee);
+
 }

@@ -63,5 +63,9 @@ public class HistoriqueApplicationServiceImpl implements HistoriqueApplicationSe
 	public List<HistoriqueApplication> findByDate(Date date) {
 		return historiqueApplicationDao.findByDate(date);
 	}
+	@Override
+	public List<HistoriqueApplication> findAll() {
+		return historiqueApplicationDao.findAll();
+	}
 
 }

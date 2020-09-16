@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.stock.Bean.Client;
 import com.example.stock.Bean.HistoriqueApplication;
 import com.example.stock.Bean.paimentDeEmploye;
 import com.example.stock.Bean.utlisateur;
@@ -25,6 +26,13 @@ import com.example.stock.Service.Facade.utilisateurService;
 public class HistoriqueApplicationRest {
 @Autowired
 private HistoriqueApplicationService historiqueApplicationService;
+public int deleteById(Long id) {
+	return historiqueApplicationService.deleteById(id);
+}
+@GetMapping("findAll")
+public List<HistoriqueApplication> findAll() {
+	return historiqueApplicationService.findAll();
+}
 @PostMapping("save")
 public int save(HistoriqueApplication heureConduite) {
 	return historiqueApplicationService.save(heureConduite);

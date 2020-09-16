@@ -8,6 +8,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -28,6 +29,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.example.stock.Bean.Client;
 import com.example.stock.Bean.HistoriqueApplication;
+import com.example.stock.Bean.etatFinanciere;
 import com.example.stock.Dao.ClientDao;
 import com.example.stock.Dao.HistoriqueApplicationDao;
 import com.example.stock.Service.Facade.ClientService;
@@ -347,4 +349,16 @@ Date date;
 	public List<Client> findByDateInscription(Date dateInscription) {
 		return clientDao.findByDateInscription(dateInscription);
 	}
+
+	@Override
+	public List<Client> findAllClientsBymoisAndAnnee(int mois, int annee) {
+		List<Client> etats = this.findAll();
+		List<Client> resultats = new ArrayList<Client>();
+		for (Client etat : etats) {
+			if((etat.getDateInscription().getMonth()+1) == mois && (etat.getDateInscription().getYear()) == annee) {
+				resultats.add(etat);
+			}
+		}
+		return resultats;	
+		}
 }

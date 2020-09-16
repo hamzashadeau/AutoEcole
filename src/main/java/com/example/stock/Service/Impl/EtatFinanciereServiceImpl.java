@@ -116,6 +116,7 @@ public class EtatFinanciereServiceImpl implements EtatFinanciereService{
 				resultats.add(etat);
 			}
 		}
-		return resultats;	}
+		return resultats;	
+		}
 
 }
