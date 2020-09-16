@@ -358,10 +358,6 @@
 				<textFieldExpression><![CDATA[$F{cin}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="109" y="234" width="100" height="15" uuid="ca85da0a-25a6-4f9d-9a4d-370bab0cce8f"/>
-				<textFieldExpression><![CDATA[$F{profession}]]></textFieldExpression>
-			</textField>
-			<textField>
 				<reportElement x="409" y="202" width="100" height="19" uuid="d075edf7-041d-460c-9814-c83cfed0662c"/>
 				<textFieldExpression><![CDATA[$F{permisDemande}]]></textFieldExpression>
 			</textField>

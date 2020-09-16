@@ -37,4 +37,5 @@ public interface ClientService {
 	public byte[] exportContrat(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException;
 	public byte[] exportAttestationdeformation(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException;
 	public byte[] exportcertificatMedicalAptitud(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException;
+	public List<Client> findByDateInscription(Date dateInscription);
 }

@@ -203,7 +203,7 @@
 				<textElement textAlignment="Right">
 					<font fontName="arial1" size="15" isBold="true"/>
 				</textElement>
-				<text><![CDATA[.اسم المدرب:.   بشرى اوحمودو                 .رقم رخصته]]></text>
+				<text><![CDATA[.اسم المدرب:.   بشرى اوحمودو                 .رقم رخصته:9454.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="605" width="552" height="30" uuid="fce7aaee-f7c6-43ff-b67b-5d4e41397c48"/>

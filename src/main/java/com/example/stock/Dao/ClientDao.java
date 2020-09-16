@@ -21,4 +21,5 @@ public Optional<Client> findById(Long id);
 public Client findByImageName(String image);
 public List<Client> findByDateExamen(Date dateExamen);
 public List<Client> findByCin(String cin);
+public List<Client> findByDateInscription(Date dateInscription);
 }

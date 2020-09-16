@@ -32,6 +32,7 @@ private HistoriqueApplicationDao historiqueApplicationDao;
 			return -1;
 		}else {
 		Client client = clientService.findById(heureConduite.getClient().getId());
+		client.setNbrSeanceDeConduite(client.getNbrSeanceDeConduite()+1);
 		client.setTotalHeureConduite(client.getTotalHeureConduite() + heureConduite.getDuree());
 			heureConduiteDao.save(heureConduite);
 			HistoriqueApplication historiqueApplication = new HistoriqueApplication();			

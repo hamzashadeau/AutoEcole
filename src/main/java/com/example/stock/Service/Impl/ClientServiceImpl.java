@@ -112,34 +112,60 @@ public class ClientServiceImpl implements ClientService {
 	    //String path = "C:\Users\basan\Desktop\Report";
 	    List<Client> employees = clientDao.findByCin(cin);
 	    employees.forEach(emp ->{
-	    	fullname = emp.getNomFR()+emp.getPrenomFR();
+	    	fullname = emp.getPermisDemande();
 	    });
+	    byte[] bytes = null;
+	    if(fullname.equals("B")) {
+		    java.io.File file = ResourceUtils.getFile("classpath:Namodaj-Chahada-TakwinB.jrxml");
+		    JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
+		    JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(employees);
+		    Map<String, Object> parameters = new HashMap<>();
+		    parameters.put("createdBy", "Java Techie");
+		    JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
+		    if (reportFormat.equalsIgnoreCase("html")) {
+		        JasperExportManager.exportReportToHtmlFile(jasperPrint,"\\employees.html");
+		    }
+		    if (reportFormat.equalsIgnoreCase("pdf")) {
+		         JasperExportManager.exportReportToPdfFile(jasperPrint,cin +"Attestationdeformation.pdf");
+		    }
+		    MediaType mediaType = MediaTypeUtils.getMediaTypeForFileName(this.servletContext, file.getName());
+		    InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
+		    try {
+				 bytes = Files.readAllBytes(Paths.get(cin +"Attestationdeformation.pdf"));
+				 this.fullname = null;
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		    System.out.println(bytes);
+
+	    }else  if(fullname.equals("A")) {
+		    java.io.File file = ResourceUtils.getFile("classpath:Namodaj-Chahada-TakwinA.jrxml");
+		    JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
+		    JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(employees);
+		    Map<String, Object> parameters = new HashMap<>();
+		    parameters.put("createdBy", "Java Techie");
+		    JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
+		    if (reportFormat.equalsIgnoreCase("html")) {
+		        JasperExportManager.exportReportToHtmlFile(jasperPrint,"\\employees.html");
+		    }
+		    if (reportFormat.equalsIgnoreCase("pdf")) {
+		         JasperExportManager.exportReportToPdfFile(jasperPrint,cin +"Attestationdeformation.pdf");
+		    }
+		    MediaType mediaType = MediaTypeUtils.getMediaTypeForFileName(this.servletContext, file.getName());
+		    InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
+		    try {
+				 bytes = Files.readAllBytes(Paths.get(cin +"Attestationdeformation.pdf"));
+				 this.fullname = null;
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		    System.out.println(bytes);
+	    }
 	    //load file and compile it
-	    java.io.File file = ResourceUtils.getFile("classpath:Namodaj-Chahada-Takwin.jrxml");
-	    JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
-	    JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(employees);
-	    Map<String, Object> parameters = new HashMap<>();
-	    parameters.put("createdBy", "Java Techie");
-	    JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
-	    if (reportFormat.equalsIgnoreCase("html")) {
-	        JasperExportManager.exportReportToHtmlFile(jasperPrint,"\\employees.html");
-	    }
-	    if (reportFormat.equalsIgnoreCase("pdf")) {
-	         JasperExportManager.exportReportToPdfFile(jasperPrint,cin +"Attestationdeformation.pdf");
-	    }
 	  //  return "report generated in path : " ;
 
-	    MediaType mediaType = MediaTypeUtils.getMediaTypeForFileName(this.servletContext, file.getName());
-	    InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
-	    byte[] bytes = null;
-	    try {
-			 bytes = Files.readAllBytes(Paths.get(cin +"Attestationdeformation.pdf"));
-			 this.fullname = null;
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	    System.out.println(bytes);
 	    return bytes;
 	}
 	public byte[] exportcertificatMedicalAptitud(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException {
@@ -217,6 +243,7 @@ public class ClientServiceImpl implements ClientService {
 				client.setPrixRestantes(client.getPrixTotal());				
 			}
 			client.setTotalHeureConduite((long) 0);
+			client.setNbrSeanceDeConduite(0);
 			client.setImageType(this.type);
 			client.setImage(this.data);
 			clientDao.save(client);
@@ -314,5 +341,10 @@ Date date;
 	@Override
 	public List<Client> findByCin(String cin) {
 		return clientDao.findByCin(cin);
+	}
+
+	@Override
+	public List<Client> findByDateInscription(Date dateInscription) {
+		return clientDao.findByDateInscription(dateInscription);
 	}
 }

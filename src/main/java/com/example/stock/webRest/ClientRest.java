@@ -39,6 +39,10 @@ public class ClientRest {
 @Autowired
 private ClientService clientService;
 
+@GetMapping("findByDateInscription/dateInscription/{dateInscription}")
+public List<Client> findByDateInscription(@PathVariable Date dateInscription) {
+	return clientService.findByDateInscription(dateInscription);
+}
 @GetMapping("exportContrat/cin/{cin}")
 public byte[] exportContrat(@PathVariable String cin, HttpServletResponse response)
 		throws FileNotFoundException, JRException {

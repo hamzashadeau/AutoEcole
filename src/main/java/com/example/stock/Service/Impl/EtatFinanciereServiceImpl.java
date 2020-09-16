@@ -95,4 +95,27 @@ public class EtatFinanciereServiceImpl implements EtatFinanciereService{
 		return this.etatFinancereDao.findByTypeAndDate(type, date);
 	}
 
+	@Override
+	public List<etatFinanciere> findAllGainsByTypeAndmoisAndAnnee(String type, int mois, int annee) {
+		List<etatFinanciere> etats = this.findByType(type);
+		List<etatFinanciere> resultats = new ArrayList<etatFinanciere>();
+		for (etatFinanciere etat : etats) {
+			if((etat.getDate().getMonth()+1) == mois && (etat.getDate().getYear()) == annee) {
+				resultats.add(etat);
+			}
+		}
+		return resultats;
+	}
+
+	@Override
+	public List<etatFinanciere> findAllDespensesByTypeAndmoisAndAnnee(String type, int mois, int annee) {
+		List<etatFinanciere> etats = this.findByType(type);
+		List<etatFinanciere> resultats = new ArrayList<etatFinanciere>();
+		for (etatFinanciere etat : etats) {
+			if((etat.getDate().getMonth()+1) == mois && (etat.getDate().getYear()) == annee) {
+				resultats.add(etat);
+			}
+		}
+		return resultats;	}
+
 }

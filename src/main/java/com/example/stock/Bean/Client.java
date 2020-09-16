@@ -56,7 +56,15 @@ public class Client {
 	private Double prixTotal;
 	private Double prixRestantes;
 	private Long totalHeureConduite;
+	private int nbrSeanceDeConduite;
 	
+	
+	public int getNbrSeanceDeConduite() {
+		return nbrSeanceDeConduite;
+	}
+	public void setNbrSeanceDeConduite(int nbrSeanceDeConduite) {
+		this.nbrSeanceDeConduite = nbrSeanceDeConduite;
+	}
 	public Long getId() {
 		return id;
 	}
@@ -266,7 +274,7 @@ public class Client {
 			String premisNumero, String numeroDeSession, String telephone, String lieuNaissance, String profession,
 			String niveauEtude, String cin, String permisDemande, String langueExam, String statusCondidat,
 			String moniteurTheorique, String moniteurPratique, String vehicule, Double prixTotal, Double prixRestantes,
-			Long totalHeureConduite) {
+			Long totalHeureConduite, int nbrSeanceDeConduite) {
 		super();
 		this.id = id;
 		this.image = image;
@@ -301,6 +309,7 @@ public class Client {
 		this.prixTotal = prixTotal;
 		this.prixRestantes = prixRestantes;
 		this.totalHeureConduite = totalHeureConduite;
+		this.nbrSeanceDeConduite = nbrSeanceDeConduite;
 	}
 	@Override
 	public String toString() {
@@ -314,8 +323,10 @@ public class Client {
 				+ ", niveauEtude=" + niveauEtude + ", cin=" + cin + ", permisDemande=" + permisDemande + ", langueExam="
 				+ langueExam + ", statusCondidat=" + statusCondidat + ", moniteurTheorique=" + moniteurTheorique
 				+ ", moniteurPratique=" + moniteurPratique + ", vehicule=" + vehicule + ", prixTotal=" + prixTotal
-				+ ", prixRestantes=" + prixRestantes + ", totalHeureConduite=" + totalHeureConduite + "]";
+				+ ", prixRestantes=" + prixRestantes + ", totalHeureConduite=" + totalHeureConduite
+				+ ", nbrSeanceDeConduite=" + nbrSeanceDeConduite + "]";
 	}
+
 
 	
 	}
