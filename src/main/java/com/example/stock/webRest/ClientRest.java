@@ -17,6 +17,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -100,8 +101,8 @@ public int save(@RequestBody Client client) {
 public int edit(@RequestBody Client client) {
 	return clientService.edit(client);
 }
-
-public int deleteById(Long id) {
+@DeleteMapping("deleteById/{id}")
+public int deleteById(@PathVariable Long id) {
 	return clientService.deleteById(id);
 }
 @GetMapping("findById/{id}")

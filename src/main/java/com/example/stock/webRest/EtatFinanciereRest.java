@@ -5,8 +5,11 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -34,16 +37,16 @@ public List<etatFinanciere> findByDate(@PathVariable Date date) {
 public List<etatFinanciere> findAll() {
 	return etatFinanciereService.findAll();
 }
-
-public int save(etatFinanciere employe) {
+@PostMapping("save")
+public int save(@RequestBody etatFinanciere employe) {
 	return etatFinanciereService.save(employe);
 }
-
-public int edit(etatFinanciere employe) {
+@PostMapping("edit")
+public int edit(@RequestBody etatFinanciere employe) {
 	return etatFinanciereService.edit(employe);
 }
-
-public int deleteById(Long id) {
+@DeleteMapping("deleteById/{id}")
+public int deleteById(@PathVariable Long id) {
 	return etatFinanciereService.deleteById(id);
 }
 

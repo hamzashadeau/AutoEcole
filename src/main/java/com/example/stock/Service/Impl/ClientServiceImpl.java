@@ -30,8 +30,12 @@ import org.springframework.web.multipart.MultipartFile;
 import com.example.stock.Bean.Client;
 import com.example.stock.Bean.HistoriqueApplication;
 import com.example.stock.Bean.etatFinanciere;
+import com.example.stock.Bean.heureConduite;
+import com.example.stock.Bean.paimentDeClient;
 import com.example.stock.Dao.ClientDao;
 import com.example.stock.Dao.HistoriqueApplicationDao;
+import com.example.stock.Dao.heureConduiteDao;
+import com.example.stock.Dao.paimentDeClientDao;
 import com.example.stock.Service.Facade.ClientService;
 import com.example.stock.webRest.MediaTypeUtils;
 
@@ -272,7 +276,10 @@ public class ClientServiceImpl implements ClientService {
 			return 1;
 		}
 	}
-
+@Autowired
+private paimentDeClientDao paimentDeClientDao;
+@Autowired
+private heureConduiteDao heureConduiteDao;
 	@Override
 	public int deleteById(Long id) {
 		Client client = findById(id);
@@ -280,9 +287,16 @@ public class ClientServiceImpl implements ClientService {
 		historiqueApplication.setDate(new Date());
 		historiqueApplication.setDescription("supprimer le client :" + client.getNomFR() + " " + client.getPrenomFR());
 		this.historiqueApplicationDao.save(historiqueApplication);
+		List<paimentDeClient> paimentDeClients = paimentDeClientDao.findByClientCin(client.getCin());
+		for (paimentDeClient paimentDeClient : paimentDeClients) {
+			paimentDeClientDao.deleteById(paimentDeClient.getId());
+		}
+		List<heureConduite> heureConduites = heureConduiteDao.findByClientCin(client.getCin());
+		for (heureConduite heureConduite : heureConduites) {
+			heureConduiteDao.deleteById(heureConduite.getId());
+		}
 		clientDao.deleteById(id);
-		Client client1 = findById(id);
-		if (client1 == null) {
+		if (clientDao.findById(id) == null) {
 			return 1;
 		} else {
 			return -1;

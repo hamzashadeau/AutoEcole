@@ -23,7 +23,7 @@ import com.example.stock.Service.Facade.EmployeService;
 public class EmployeRest {
 	@Autowired
 private EmployeService employeService;
-	@DeleteMapping("deleteById/id/{id}")
+	@DeleteMapping("deleteById/{id}")
 	public int deleteById(@PathVariable Long id) {
 		return employeService.deleteById(id);
 	}

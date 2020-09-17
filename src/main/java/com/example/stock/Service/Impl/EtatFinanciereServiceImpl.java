@@ -46,10 +46,10 @@ public class EtatFinanciereServiceImpl implements EtatFinanciereService{
 	@Override
 	public int deleteById(Long id) {
 		this.etatFinancereDao.deleteById(id);
-		if(this.findById(id) != null) {
-			return -1;
+		if(etatFinancereDao.findById(id) == null) {
+			return 1;
 		} else {
-			return 1;			
+			return -1;			
 		}
 	}
 

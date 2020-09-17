@@ -15,7 +15,7 @@ public interface utilisateurService {
 
 	public int seConnecter(String login, String mdp) throws Exception;
 
-	public int resetPassword(String email, String nvPassword) throws Exception;
+	public int resetPassword(String email, String oldPassword, String nvPassword) throws Exception;
 
 	public int resetPasswordCodeVerification(String email, String nvpassword, Long code) throws Exception;
 

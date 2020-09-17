@@ -71,8 +71,7 @@ public class paimentDeClientServiceImpl implements paimentDeClientService{
 		historiqueApplication.setDescription("suppression un paiment de client :" + heureConduite.getClient().getNomFR() + " " + heureConduite.getClient().getPrenomFR());
 		this.historiqueApplicationDao.save(historiqueApplication);
 		paimentClientDao.deleteById(id);
-		paimentDeClient heureConduite1 = findById(id);
-		if(heureConduite1 == null) {
+		if(paimentClientDao.findById(id) == null) {
 			return 1;
 		}else {
 		return -1;

@@ -27,9 +27,9 @@ public void getHashMotDePasse(@PathVariable String modPasse) {
 public int seConnecter(@PathVariable String login,@PathVariable String mdp) throws Exception {
 	return utilisateurService.seConnecter(login, mdp);
 }
-@GetMapping("resetPassword/email/{email}/nvPassword/{nvPassword}")
-public int resetPassword(String email, String nvPassword) throws Exception {
-	return utilisateurService.resetPassword(email, nvPassword);
+@GetMapping("resetPassword/email/{email}/oldPassword/{oldPassword}/nvPassword/{nvPassword}")
+public int resetPassword(@PathVariable String email,@PathVariable String oldPassword,@PathVariable String nvPassword) throws Exception {
+	return utilisateurService.resetPassword(email,oldPassword, nvPassword);
 }
 @GetMapping("resetPasswordCodeVerification/email/{email}/nvpassword/{nvpassword}/code/{code}")
 public int resetPasswordCodeVerification(String email, String nvpassword, Long code) throws Exception {

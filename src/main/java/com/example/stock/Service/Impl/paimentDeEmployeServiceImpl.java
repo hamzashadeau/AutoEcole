@@ -71,8 +71,7 @@ public class paimentDeEmployeServiceImpl implements paimentDeEmployeService{
 		historiqueApplication.setDescription("suppression de un avancement de employé :" + heureConduite.getEmploye().getNomFR() + " " + heureConduite.getEmploye().getPrenomFR());
 		this.historiqueApplicationDao.save(historiqueApplication);
 		paimentClientDao.deleteById(id);
-		paimentDeEmploye heureConduite1 = findById(id);
-		if(heureConduite1== null) {
+		if(paimentClientDao.findById(id)== null) {
 			return 1;
 		}else {
 		return -1;

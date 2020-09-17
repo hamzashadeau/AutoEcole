@@ -11,9 +11,12 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.example.stock.Bean.Employe;
 import com.example.stock.Bean.HistoriqueApplication;
+import com.example.stock.Bean.paimentDeEmploye;
 import com.example.stock.Dao.EmployeDao;
 import com.example.stock.Dao.HistoriqueApplicationDao;
+import com.example.stock.Dao.paimentDeEmployeDao;
 import com.example.stock.Service.Facade.EmployeService;
+import com.example.stock.Service.Facade.paimentDeEmployeService;
 @Service
 public class EmployeServiceImpl implements EmployeService {
 @Autowired
@@ -87,7 +90,8 @@ private HistoriqueApplicationDao historiqueApplicationDao;
 		 return 1;
 	}
 	}
-
+@Autowired
+private paimentDeEmployeDao paimentDeEmployeDao;
 	@Override
 	public int deleteById(Long id) {
 		Employe employe = findById(id);
@@ -95,9 +99,12 @@ private HistoriqueApplicationDao historiqueApplicationDao;
 		historiqueApplication.setDate(new Date());
 		historiqueApplication.setDescription("supprimr employe :" + employe.getNomFR() + " " + employe.getPrenomFR());
 		this.historiqueApplicationDao.save(historiqueApplication);
+		List<paimentDeEmploye> paimentDeEmployes = paimentDeEmployeDao.findByEmployeCin(employe.getCin());
+		for (paimentDeEmploye paimentDeEmploye : paimentDeEmployes) {
+			paimentDeEmployeDao.deleteById(paimentDeEmploye.getId());
+		}
 		employeDao.deleteById(id);
-		Employe employe1 = findById(id);
-		if(employe1== null) {
+		if(employeDao.findById(id)== null) {
 			return 1;
 		}else {
 		return -1;

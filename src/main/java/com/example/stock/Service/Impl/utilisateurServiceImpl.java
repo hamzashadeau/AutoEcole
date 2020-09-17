@@ -85,9 +85,9 @@ for (int i = 0; i < byteData.length; i++) {
 			return -2;
 		}
 	}
-	public int resetPassword(String email, String nvPassword) throws Exception {
+	public int resetPassword(String email,String oldPassword, String nvPassword) throws Exception {
 		utlisateur user = utilisateurDao.findByLogin(email);
-		if(!user.getModDePasse().equals(hash(nvPassword))) {
+		if(user.getModDePasse().equals(hash(oldPassword))) {
 			user.setModDePasse(hash(nvPassword));
 			utilisateurDao.save(user);
 			return 1;

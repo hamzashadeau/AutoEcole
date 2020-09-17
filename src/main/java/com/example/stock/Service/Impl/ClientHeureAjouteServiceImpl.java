@@ -87,9 +87,8 @@ public class ClientHeureAjouteServiceImpl implements ClientHeureAjouteService {
 		historiqueApplication.setDate(new Date());
 		historiqueApplication.setDescription("supprimer le client Heure Ajoute :" + client.getNomFR() + " " + client.getPrenomFR());
 		this.historiqueApplicationDao.save(historiqueApplication);
-		clientDao.deleteById(id);
-		ClientHeureAjoute client1 = findById(id);
-		if (client1 == null) {
+		clientDao.deleteById(id);;
+		if (clientDao.findById(id) == null) {
 			return 1;
 		} else {
 			return -1;
