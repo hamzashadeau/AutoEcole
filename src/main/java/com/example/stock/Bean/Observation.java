@@ -72,6 +72,10 @@ public class Observation {
 		return "Observation [id=" + id + ", numeroSession=" + numeroSession + ", status=" + status + ", score=" + score
 				+ ", date=" + date + ", client=" + client + "]";
 	}
+	public Observation() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	
 
 	
