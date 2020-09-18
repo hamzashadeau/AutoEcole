@@ -33,7 +33,7 @@ import com.example.stock.Service.Facade.ClientService;
 
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://auto-ecole.herokuapp.com/")
 @RequestMapping("/autoEcole-Api/ClientHeureAjoute/")
 public class ClientHeureAjouteRest {
 @Autowired
