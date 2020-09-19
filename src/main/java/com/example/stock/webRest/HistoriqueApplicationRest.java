@@ -21,7 +21,7 @@ import com.example.stock.Service.Facade.paimentDeEmployeService;
 import com.example.stock.Service.Facade.utilisateurService;
 
 @RestController
-@CrossOrigin("https://auto-ecole.herokuapp.com/")
+@CrossOrigin("https://auto-ecole.herokuapp.com")
 @RequestMapping("/autoEcole-Api/historiqueApplication/")
 public class HistoriqueApplicationRest {
 @Autowired

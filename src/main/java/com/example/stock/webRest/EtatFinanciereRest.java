@@ -17,7 +17,7 @@ import com.example.stock.Bean.etatFinanciere;
 import com.example.stock.Service.Facade.EtatFinanciereService;
 
 @RestController
-@CrossOrigin("https://auto-ecole.herokuapp.com/")
+@CrossOrigin("https://auto-ecole.herokuapp.com")
 @RequestMapping("/autoEcole-Api/EtatFinanciere/")
 public class EtatFinanciereRest {
 @Autowired
