@@ -60,6 +60,7 @@ public class utlisateur {
 		this.login = login;
 		this.modDePasse = modDePasse;
 	}
+	
 	@Override
 	public String toString() {
 		return "utlisateur [id=" + id + ", employe=" + employe + ", login=" + login + ", modDePasse=" + modDePasse

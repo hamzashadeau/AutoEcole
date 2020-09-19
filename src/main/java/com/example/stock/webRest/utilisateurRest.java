@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.stock.Bean.utlisateur;
+import com.example.stock.Dao.EmployeDao;
+import com.example.stock.Dao.UtilisateurDao;
 import com.example.stock.Service.Facade.utilisateurService;
 
 @RestController
@@ -47,9 +49,17 @@ public int save(@RequestBody utlisateur heureConduite) {
 public int edit(@RequestBody utlisateur heureConduite) {
 	return utilisateurService.edit(heureConduite);
 }
+@Autowired
+private EmployeDao utilisateurDao;
+
 @GetMapping("creeUnUtilisateur")
 public String cree() {
-this.utilisateurService.save(new utlisateur(5, "autoEcole", "75b408e1c9cdf529fab0d9b0dae5d02c81e79e935321a86dd9c8d5069d3aba7c", 8));
+	utlisateur uti = new utlisateur();
+//	uti.setId((long) 5);
+	uti.setLogin("autoEcole");
+	uti.setModDePasse("75b408e1c9cdf529fab0d9b0dae5d02c81e79e935321a86dd9c8d5069d3aba7c");
+	uti.setEmploye(this.utilisateurDao.findById((long) 8).get());
+this.utilisateurService.save(uti);
 return "utilisater saved";
 }
 public int deleteById(Long id) {

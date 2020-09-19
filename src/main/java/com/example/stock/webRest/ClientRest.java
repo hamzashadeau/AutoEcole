@@ -40,6 +40,7 @@ public class ClientRest {
 @Autowired
 private ClientService clientService;
 
+
 @GetMapping("findByPermisDemande/permisDemande/{permisDemande}")
 public List<Client> findByPermisDemande(@PathVariable String permisDemande) {
 	return clientService.findByPermisDemande(permisDemande);
