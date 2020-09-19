@@ -18,7 +18,7 @@ import com.example.stock.Bean.Employe;
 import com.example.stock.Service.Facade.EmployeService;
 
 @RestController
-@CrossOrigin("https://gifted-yalow-41f4d8.netlify.app/")
+@CrossOrigin("http://localhost:4200")
 @RequestMapping("/autoEcole-Api/Employe/")
 public class EmployeRest {
 	@Autowired

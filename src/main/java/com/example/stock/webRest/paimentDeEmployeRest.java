@@ -15,7 +15,7 @@ import com.example.stock.Bean.paimentDeEmploye;
 import com.example.stock.Service.Facade.paimentDeEmployeService;
 
 @RestController
-@CrossOrigin("https://gifted-yalow-41f4d8.netlify.app/")
+@CrossOrigin("http://localhost:4200")
 @RequestMapping("/autoEcole-Api/paimentDeEmploye/")
 public class paimentDeEmployeRest {
 @Autowired

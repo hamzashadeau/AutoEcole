@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin("https://gifted-yalow-41f4d8.netlify.app/")
+@CrossOrigin("http://localhost:4200")
 @RequestMapping("/autoEcole-Api/Observation/")
 public class ObservationRest {
 

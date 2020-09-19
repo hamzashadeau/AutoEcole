@@ -13,7 +13,7 @@ import com.example.stock.Bean.utlisateur;
 import com.example.stock.Service.Facade.utilisateurService;
 
 @RestController
-@CrossOrigin("https://gifted-yalow-41f4d8.netlify.app/")
+@CrossOrigin("http://localhost:4200")
 @RequestMapping("/autoEcole-Api/utilisateur/")
 public class utilisateurRest {
 @Autowired

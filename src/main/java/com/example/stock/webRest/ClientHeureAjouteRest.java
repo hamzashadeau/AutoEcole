@@ -33,7 +33,7 @@ import com.example.stock.Service.Facade.ClientService;
 
 
 @RestController
-@CrossOrigin("https://gifted-yalow-41f4d8.netlify.app/")
+@CrossOrigin("http://localhost:4200")
 @RequestMapping("/autoEcole-Api/ClientHeureAjoute/")
 public class ClientHeureAjouteRest {
 @Autowired
