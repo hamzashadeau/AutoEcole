@@ -47,6 +47,7 @@ import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
+import net.sf.jasperreports.engine.util.JRFontNotFoundException;
 
 @Service
 public class ClientServiceImpl implements ClientService {
@@ -80,7 +81,7 @@ public class ClientServiceImpl implements ClientService {
 		return clientDao.findAll();
 	}
 	String fullname = null;
-	public byte[] exportContrat(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException {
+	public byte[] exportContrat(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException,JRFontNotFoundException {
 	    //String path = "C:\Users\basan\Desktop\Report";
 	    List<Client> employees = clientDao.findByCin(cin);
 	    employees.forEach(emp ->{

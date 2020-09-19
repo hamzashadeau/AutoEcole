@@ -16,6 +16,7 @@ import com.example.stock.Bean.Employe;
 import com.example.stock.Bean.etatFinanciere;
 
 import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.util.JRFontNotFoundException;
 
 public interface ClientService {
 	Client findByGeneratedcode(String generatedCode);
@@ -36,7 +37,7 @@ public interface ClientService {
 	public List<Client> findByDateSuivant();
 	public List<Client> findByCin(String cin);
 	public byte[] exportInformationDuDemandeur(String reportFormat, String cin,HttpServletResponse response) throws JRException, IOException;
-	public byte[] exportContrat(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException;
+	public byte[] exportContrat(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException,JRFontNotFoundException;
 	public byte[] exportAttestationdeformation(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException;
 	public byte[] exportcertificatMedicalAptitud(String reportFormat, String cin,HttpServletResponse response) throws FileNotFoundException, JRException;
 	public List<Client> findByDateInscription(Date dateInscription);

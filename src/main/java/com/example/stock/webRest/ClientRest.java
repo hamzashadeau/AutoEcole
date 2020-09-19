@@ -31,6 +31,7 @@ import com.example.stock.Bean.Client;
 import com.example.stock.Service.Facade.ClientService;
 
 import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.util.JRFontNotFoundException;
 
 
 @RestController
@@ -55,7 +56,7 @@ public List<Client> findByDateInscription(@PathVariable Date dateInscription) {
 }
 @GetMapping("exportContrat/cin/{cin}")
 public byte[] exportContrat(@PathVariable String cin, HttpServletResponse response)
-		throws FileNotFoundException, JRException {
+		throws FileNotFoundException, JRException,JRFontNotFoundException {
 	return clientService.exportContrat("pdf", cin, response);
 }
 @GetMapping("exportAttestationdeformation/cin/{cin}")
