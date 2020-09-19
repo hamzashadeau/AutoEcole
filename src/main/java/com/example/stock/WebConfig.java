@@ -1,4 +1,4 @@
-package demo;
+package com.example.stock;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -12,7 +12,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/autoEcole-Api/**")
-            .allowedOrigins("https://gifted-yalow-41f4d8.netlify.app/")
+            .allowedOrigins("https://auto-ecole.herokuapp.com/")
             .allowedMethods("PUT", "DELETE","POST", "GET")
             .allowedHeaders("header1", "header2", "header3")
             .exposedHeaders("header1", "header2")

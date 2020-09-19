@@ -15,7 +15,7 @@ import com.example.stock.Bean.paimentDeEmploye;
 import com.example.stock.Service.Facade.paimentDeEmployeService;
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://auto-ecole.herokuapp.com/")
 @RequestMapping("/autoEcole-Api/paimentDeEmploye/")
 public class paimentDeEmployeRest {
 @Autowired

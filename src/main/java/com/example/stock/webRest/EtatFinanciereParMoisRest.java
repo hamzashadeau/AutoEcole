@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://auto-ecole.herokuapp.com/")
 @RequestMapping("/autoEcole-Api/EtatFinanciereParMois/")
 public class EtatFinanciereParMoisRest {
 

@@ -16,7 +16,7 @@ import com.example.stock.Bean.heureConduite;
 import com.example.stock.Service.Facade.heureConduiteService;
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://auto-ecole.herokuapp.com/")
 @RequestMapping("/autoEcole-Api/heureConduite/")
 public class heureConduiteRest {
 @Autowired

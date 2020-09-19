@@ -13,7 +13,7 @@ import com.example.stock.Bean.utlisateur;
 import com.example.stock.Service.Facade.utilisateurService;
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://auto-ecole.herokuapp.com/")
 @RequestMapping("/autoEcole-Api/utilisateur/")
 public class utilisateurRest {
 @Autowired
