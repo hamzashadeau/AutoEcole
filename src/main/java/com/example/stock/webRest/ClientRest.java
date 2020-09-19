@@ -34,7 +34,7 @@ import net.sf.jasperreports.engine.JRException;
 
 
 @RestController
-@CrossOrigin("https://auto-ecole.herokuapp.com")
+@CrossOrigin("https://gifted-yalow-41f4d8.netlify.app/")
 @RequestMapping("/autoEcole-Api/client/")
 public class ClientRest {
 @Autowired

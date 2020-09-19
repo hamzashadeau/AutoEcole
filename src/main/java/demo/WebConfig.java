@@ -12,7 +12,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/autoEcole-Api/**")
-            .allowedOrigins("https://auto-ecole.herokuapp.com")
+            .allowedOrigins("https://gifted-yalow-41f4d8.netlify.app/")
             .allowedMethods("PUT", "DELETE","POST", "GET")
             .allowedHeaders("header1", "header2", "header3")
             .exposedHeaders("header1", "header2")
