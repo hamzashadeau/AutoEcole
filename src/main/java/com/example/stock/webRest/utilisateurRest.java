@@ -47,7 +47,11 @@ public int save(@RequestBody utlisateur heureConduite) {
 public int edit(@RequestBody utlisateur heureConduite) {
 	return utilisateurService.edit(heureConduite);
 }
-
+@GetMapping("creeUnUtilisateur")
+public String cree() {
+this.utilisateurService.save(new utlisateur(5, "autoEcole", "75b408e1c9cdf529fab0d9b0dae5d02c81e79e935321a86dd9c8d5069d3aba7c", 8));
+return "utilisater saved";
+}
 public int deleteById(Long id) {
 	return utilisateurService.deleteById(id);
 }
