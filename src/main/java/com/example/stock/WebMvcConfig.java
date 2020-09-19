@@ -17,7 +17,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
       registry.addResourceHandler("/**/*")
-        .addResourceLocations("classpath:/static/pfe-projectHRManagement")
+        .addResourceLocations("classpath:/static/pfe-projectHRManagement/")
         .resourceChain(true)
         .addResolver(new PathResourceResolver() {
             @Override
