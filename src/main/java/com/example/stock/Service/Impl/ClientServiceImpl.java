@@ -87,7 +87,7 @@ public class ClientServiceImpl implements ClientService {
 	    	fullname = emp.getNomFR()+emp.getPrenomFR();
 	    });
 	    //load file and compile it
-	    java.io.File file = ResourceUtils.getFile("classpath:src/main/resources/contrat-test.jrxml");
+	    java.io.File file = ResourceUtils.getFile("src/main/resources/contrat-test.jrxml");
 	    JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
 	    JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(employees);
 	    Map<String, Object> parameters = new HashMap<>();
