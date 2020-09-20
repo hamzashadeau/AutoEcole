@@ -1,10 +1,7 @@
 package com.example.stock.Service.Impl;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -19,9 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.InputStreamResource;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 import org.springframework.util.StringUtils;
@@ -29,7 +24,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.example.stock.Bean.Client;
 import com.example.stock.Bean.HistoriqueApplication;
-import com.example.stock.Bean.etatFinanciere;
 import com.example.stock.Bean.heureConduite;
 import com.example.stock.Bean.paimentDeClient;
 import com.example.stock.Dao.ClientDao;
@@ -38,7 +32,6 @@ import com.example.stock.Dao.heureConduiteDao;
 import com.example.stock.Dao.paimentDeClientDao;
 import com.example.stock.Service.Facade.ClientService;
 import com.example.stock.webRest.MediaTypeUtils;
-
 
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
@@ -123,7 +116,7 @@ public class ClientServiceImpl implements ClientService {
 	    });
 	    byte[] bytes = null;
 	    if(fullname.equals("B")) {
-		    java.io.File file = ResourceUtils.getFile("classpath:Namodaj-Chahada-TakwinB.jrxml");
+		    java.io.File file = ResourceUtils.getFile("src/main/resources/Namodaj-Chahada-TakwinB.jrxml");
 		    JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
 		    JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(employees);
 		    Map<String, Object> parameters = new HashMap<>();
@@ -147,7 +140,7 @@ public class ClientServiceImpl implements ClientService {
 		    System.out.println(bytes);
 
 	    }else  if(fullname.equals("A")) {
-		    java.io.File file = ResourceUtils.getFile("classpath:Namodaj-Chahada-TakwinA.jrxml");
+		    java.io.File file = ResourceUtils.getFile("src/main/resources/Namodaj-Chahada-TakwinA.jrxml");
 		    JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
 		    JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(employees);
 		    Map<String, Object> parameters = new HashMap<>();
@@ -182,7 +175,7 @@ public class ClientServiceImpl implements ClientService {
 	    	fullname = emp.getNomFR()+emp.getPrenomFR();
 	    });
 	    //load file and compile it
-	    java.io.File file = ResourceUtils.getFile("classpath:certificatMedicalAptitud.jrxml");
+	    java.io.File file = ResourceUtils.getFile("src/main/resources/certificatMedicalAptitud.jrxml");
 	    JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
 	    JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(employees);
 	    Map<String, Object> parameters = new HashMap<>();
@@ -213,7 +206,7 @@ public class ClientServiceImpl implements ClientService {
 	    //String path = "C:\Users\basan\Desktop\Report";
 	    List<Client> employees = clientDao.findByCin(cin);
 	    //load file and compile it
-	    java.io.File file = ResourceUtils.getFile("classpath:informationDuDemandeur.jrxml");
+	    java.io.File file = ResourceUtils.getFile("src/main/resources/informationDuDemandeur.jrxml");
 	    JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
 	    JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(employees);
 	    Map<String, Object> parameters = new HashMap<>();
