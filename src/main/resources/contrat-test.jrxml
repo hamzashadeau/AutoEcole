@@ -259,7 +259,7 @@
 			<staticText>
 				<reportElement x="80" y="10" width="400" height="62" uuid="05e8ed9f-e98c-49d2-a69a-5e409eb5f2ea"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1" size="20" isBold="true"/>
+					<font fontName="Times New Roman" size="20" isBold="true"/>
 				</textElement>
 				<text><![CDATA[عقد التكوين بين المرشح ومؤسسة تعليم السياقة
 رخصة السياقة من صنف '' ... B ... '']]></text>
