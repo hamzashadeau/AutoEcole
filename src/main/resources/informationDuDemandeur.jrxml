@@ -38,14 +38,23 @@
 			</rectangle>
 			<staticText>
 				<reportElement x="31" y="9" width="95" height="14" uuid="40f60904-1376-4656-8aa0-a3b958b00947"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Royaume du Maroc]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="21" y="24" width="126" height="16" uuid="2c570ba5-dd03-4188-8d86-ffac4990e2b6"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Ministère de l'Equipement]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="39" y="40" width="100" height="14" uuid="45d8f714-3804-48fd-a63a-d2541016294b"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[et du Transport]]></text>
 			</staticText>
 			<line>
@@ -55,23 +64,29 @@
 			</line>
 			<staticText>
 				<reportElement x="6" y="67" width="180" height="20" uuid="eae8819d-e952-462b-a238-5c79eb745b3a"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Derection des Transports Routiers]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="24" y="87" width="131" height="20" uuid="320375de-9819-4379-a286-3f59be4d9298"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[et de la Sécurité Routière]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="447" y="16" width="100" height="18" uuid="226cfaed-b683-4edc-b682-ef868ba1354f"/>
 				<textElement>
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[المملكة المغربية]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="447" y="34" width="90" height="20" uuid="0f3c0e32-d7cf-48fd-9937-887128599bc5"/>
 				<textElement>
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[وزارة التجهيز و النقل]]></text>
 			</staticText>
@@ -83,14 +98,14 @@
 			<staticText>
 				<reportElement x="447" y="69" width="100" height="20" uuid="0e80ad3d-9ee5-4b18-b7b9-8d12c4dfe56a"/>
 				<textElement>
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[مديرية النقل عبر الطرق]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="457" y="84" width="100" height="15" uuid="e8195c1b-6259-4ba0-a9b2-4665346ec67a"/>
 				<textElement>
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[و السلامة الطرقية]]></text>
 			</staticText>
@@ -103,73 +118,91 @@
 			<staticText>
 				<reportElement x="80" y="138" width="400" height="19" uuid="d1e3169c-88ad-4137-a961-5448bfa28aea"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1" size="14" isBold="true"/>
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Demande de: Délivrance du permis de conduire طلب  ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="12" y="240" width="100" height="14" uuid="a458fc0e-be9c-43f4-a094-9727da12dc13"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Prénom: ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="12" y="260" width="100" height="14" uuid="43ead6c9-4d18-4efe-98f0-52f1e996c0a9"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Nom: ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="12" y="280" width="100" height="14" uuid="4c64c8ad-eb62-411e-99d4-e93716550333"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Né (e) le: ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="12" y="300" width="100" height="14" uuid="f8db80f3-24e2-47f9-8ce4-e86c821fa133"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Cartes d'identité: ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="15" y="320" width="100" height="14" uuid="a91c380e-bb9d-4c9c-999a-61bab748f440"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Résident à: ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="15" y="340" width="100" height="15" uuid="998ec59f-e1db-49c6-ad25-58938e217d40"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Catégorie demandé :]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="462" y="340" width="84" height="14" uuid="8e1bcfea-8e6a-4875-8d54-1e3e2a34c632"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[:الصنف المطلوب ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="462" y="320" width="90" height="14" uuid="5bab895c-aeff-4dac-a50d-81a4ebe94cd3"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[:القاطن ب ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="463" y="300" width="84" height="14" uuid="3268ad56-270b-4107-88eb-a7c1e00b4cc1"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[:بطاقة التعريف رقم ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="462" y="280" width="84" height="14" uuid="22f61394-0101-444a-8516-56d4ccaf167d"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[:مزداد بتاريخ ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="462" y="240" width="84" height="14" uuid="be84b9e8-6e5f-4902-9f4e-0d3f0d04559b"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[:الإسم الشخصي ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="462" y="260" width="84" height="14" uuid="6cb4e743-6e80-4762-b2a0-c42500b6d4b3"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[:الإسم العائلي ]]></text>
 			</staticText>
@@ -179,14 +212,14 @@
 			<staticText>
 				<reportElement x="202" y="186" width="160" height="20" uuid="0de074c5-ff6e-4b00-a3c0-99298f440e58"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1" size="14" isBold="true"/>
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[معلومات حول صاحب الطلب]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="202" y="206" width="160" height="20" uuid="a4f35f26-d9c8-4368-9f55-4d7c90bbee60"/>
 				<textElement textAlignment="Center">
-					<font isBold="true"/>
+					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Information sur le demandeur]]></text>
 			</staticText>
@@ -204,14 +237,14 @@
 			<staticText>
 				<reportElement x="214" y="378" width="180" height="20" uuid="85b9a738-8821-4c70-a510-f709aca9a551"/>
 				<textElement>
-					<font fontName="arial1" size="14" isBold="true"/>
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[معلومات حول رخصة السياقة]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="192" y="398" width="189" height="22" uuid="bb198a30-9c51-4df6-81fb-0e0d689c0d77"/>
 				<textElement>
-					<font isBold="true"/>
+					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Information sur le permis de conduire]]></text>
 			</staticText>
@@ -224,7 +257,7 @@
 			<staticText>
 				<reportElement x="13" y="445" width="103" height="17" uuid="69495972-6279-4f34-a4d4-304f666427de"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1" size="12" isBold="true"/>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Catégorie     الصنف]]></text>
 			</staticText>
@@ -255,42 +288,42 @@
 			<staticText>
 				<reportElement x="60" y="464" width="30" height="22" uuid="57000c4d-b95f-415a-9a06-d0046c92a2d4"/>
 				<textElement textAlignment="Center">
-					<font isBold="true"/>
+					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[A1]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="60" y="488" width="30" height="22" uuid="ddee8741-383b-4565-8cbe-9e53ab8e1730"/>
 				<textElement textAlignment="Center">
-					<font isBold="true"/>
+					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[A]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="60" y="508" width="30" height="22" uuid="ed188894-ba3d-46d3-8240-6e8211a399aa"/>
 				<textElement textAlignment="Center">
-					<font isBold="true"/>
+					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[B]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="60" y="530" width="30" height="22" uuid="c957b828-340e-4c4c-b78e-469628c65386"/>
 				<textElement textAlignment="Center">
-					<font isBold="true"/>
+					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[C]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="60" y="554" width="30" height="22" uuid="0e0ab1b9-ca77-4fe4-86c3-2d55d4fded2e"/>
 				<textElement textAlignment="Center">
-					<font isBold="true"/>
+					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[D]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="60" y="577" width="30" height="22" uuid="ad59a0e7-38b0-4e94-bb0e-4717c3f9a194"/>
 				<textElement textAlignment="Center">
-					<font isBold="true"/>
+					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[E(B)]]></text>
 			</staticText>
@@ -303,7 +336,7 @@
 			<staticText>
 				<reportElement x="60" y="600" width="30" height="22" uuid="7971d5de-51e2-4021-b5e9-5dfc37088412"/>
 				<textElement textAlignment="Center">
-					<font isBold="true"/>
+					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[E(C)]]></text>
 			</staticText>
@@ -312,7 +345,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center">
-					<font isBold="true"/>
+					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[E(D)]]></text>
 			</staticText>
@@ -358,25 +391,28 @@
 			<staticText>
 				<reportElement x="133" y="446" width="198" height="16" uuid="30ac426f-1f14-4223-82a1-78bcb5bc023e"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1" isBold="true"/>
+					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Lieu de délivrance    مكان التسليم]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="368" y="447" width="187" height="15" uuid="8d436363-3674-4cec-8bbd-ba64e779f41a"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1" isBold="true"/>
+					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Date de délivrance  تاريخ التسليم]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="79" y="421" width="100" height="22" uuid="21b2aca2-f250-4a33-a07b-056b12e03864"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Perms de conduire N:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="389" y="421" width="100" height="14" uuid="54708ae0-4654-4bbf-a05c-bd14e910d7d5"/>
 				<textElement>
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[رخصة السياقة رقم]]></text>
 			</staticText>
@@ -387,12 +423,15 @@
 			</rectangle>
 			<staticText>
 				<reportElement x="140" y="677" width="145" height="17" uuid="e4fd8232-823b-4890-ba62-35a96f9de687"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[signature du demandeur ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="468" y="675" width="90" height="21" uuid="e999e740-6acd-4134-b3ef-045b44cdc450"/>
 				<textElement>
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[توقيع صاحب الطلب]]></text>
 			</staticText>
@@ -403,79 +442,115 @@
 				<reportElement x="0" y="702" width="285" height="20" uuid="4ecaabdc-b7dd-40a2-9eed-44da0c7a5887">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Cadre réservé au paiment des droits de timbres et taxes ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="765" width="145" height="20" uuid="594b8497-5216-4914-8b24-ff7edd915550">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[PERFECTION MARRAKECH]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="742" width="100" height="17" uuid="1491aee9-72a9-4406-b82c-c623ab31e8e0">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Quittance N]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="719" width="232" height="20" uuid="69ff56c8-6b2a-44e7-9b86-cc5c13041218">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Rémunération des services rendus par METDTRSR]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="782" width="100" height="19" uuid="3c855e21-c8cb-436a-be13-b3b77129ac54">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<text><![CDATA[Droit de timbre]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="405" y="742" width="150" height="22" uuid="9f85f4b0-9a70-4bcb-a759-c6207bee3805"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<text><![CDATA[إطار خاص باداء واجبات التنبر و الرسوم]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="170" y="340" width="100" height="20" uuid="6fd5cd9f-759b-471a-86f3-c7b0fbb37190"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{permisDemande}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="122" y="320" width="230" height="14" uuid="2ddc4ca6-d042-4e6c-841e-04131bbe213e"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{addresseFR}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="104" y="300" width="85" height="14" uuid="26a7e9c6-3fb1-4bff-b3be-b69d24d85791"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{cin}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="212" y="280" width="100" height="20" uuid="0b0b97fb-090d-4a87-9f7d-692756b267d6"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{dateNaissance}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="382" y="300" width="70" height="14" uuid="e390cf11-33ce-4506-932e-33b338f4a0e0"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{cin}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="362" y="260" width="80" height="14" uuid="86c4f4fb-cac6-4121-993a-1b96afd20f71"/>
 				<textElement>
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{nomAR}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="352" y="240" width="100" height="14" uuid="fde21fb6-e9e4-4d02-b67f-18ce59d6c658"/>
 				<textElement>
-					<font fontName="arial1"/>
+					<font fontName="DejaVu Sans"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{prenomAR}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="112" y="261" width="100" height="13" uuid="e9dc17d6-2308-42cb-8d7a-dd7b1dfdf467"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{nomFR}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="112" y="240" width="100" height="14" uuid="a6d3ec88-2dc5-4f34-9443-51db9e20d472"/>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{prenomFR}]]></textFieldExpression>
 			</textField>
 		</band>

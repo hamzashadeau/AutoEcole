@@ -35,7 +35,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[تلتزم المؤسسة بتكوين المرشح طبقا للبرنامج الوطني لتعليم السياقة]]></text>
 			</staticText>
@@ -44,7 +44,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[المادة 3 : التزامات المؤسسة]]></text>
 			</staticText>
@@ -53,7 +53,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[ لمدة لا تتعدى ثلاثة أشهر.]]></text>
 			</staticText>
@@ -62,7 +62,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[يمتد هذا العقد لمدة ستة أشهر ابتداء من تاريخ توقيعه. ويمكن تمديده، في حالة الاتفاق بين الطرفين،]]></text>
 			</staticText>
@@ -71,7 +71,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[المادة 2 : مدة العقد]]></text>
 			</staticText>
@@ -80,7 +80,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[كما يحدد حقوق وواجبات كلا الطرفين مع مراعاة القوانين والأنظمة الجاري بها العمل في هذا الشأن.]]></text>
 			</staticText>
@@ -89,7 +89,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[مركبة تتطلب قيادتها رخصة السياقة من صنف ''....A.... ''، طبقا للبرامج المحددة من طرف الإدارة.]]></text>
 			</staticText>
@@ -98,28 +98,28 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[يهدف هذا العقد إلى تكوين المرشح وتمكينه من اكتساب المعارف والمهارات الضرورية اللازمة التي تمكنه من سياقة]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="495" width="555" height="20" uuid="33c9247d-00bb-4222-91b6-ea2a357d871b"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[المادة الأولـــى : موضوع العقد]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="473" width="555" height="20" uuid="9a939b48-1afc-4f5f-b1f0-75c463c56ff6"/>
 				<textElement textAlignment="Center">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[اتفـــــــق الطرفـــــــان علـــــى ما يلــــــي :]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="1" y="451" width="555" height="20" uuid="28037822-a299-4714-b8a3-e4a6db1f848f"/>
 				<textElement textAlignment="Left">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[المسمى(ة) "المرشح (ة)"]]></text>
 			</staticText>
@@ -128,7 +128,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[رقم تسجيل المرشح الممنوح من طرف الإدارة (Référence web) :]]></text>
 			</staticText>
@@ -137,7 +137,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[القاطن (ة) ب :]]></text>
 			</staticText>
@@ -146,14 +146,14 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[والسيد (ة) :]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="338" width="555" height="20" uuid="8231bee8-e76f-4f0a-8fe7-3547d03e7049"/>
 				<textElement textAlignment="Left">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[      المسماة "المؤسسة " تامنصورت]]></text>
 			</staticText>
@@ -162,7 +162,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[البريد الإلكتروني : autoecoletamnsourte@gmail.com]]></text>
 			</staticText>
@@ -171,7 +171,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[الهاتف :     0672770102                                                 الفاكس : 0524203453]]></text>
 			</staticText>
@@ -180,7 +180,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[رقم القيد في السجل الوطني الخاص بمؤسسات تعليم السياقة  (رقم الرخصة) :5844]]></text>
 			</staticText>
@@ -189,7 +189,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[رقم القيد في السجل التجاري:   98463                                            المدينة : مراكش]]></text>
 			</staticText>
@@ -198,7 +198,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[رقم القيد في سجل الضريبة المهنية :  64800524]]></text>
 			</staticText>
@@ -207,7 +207,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[العنوان : شطر1 حرف I رقم 30 تامنصورت مراكش]]></text>
 			</staticText>
@@ -216,7 +216,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[رقم القيد في السجل الوطني الخاص بمؤسسات تعليم السياقة  (رقم الرخصة) :5844]]></text>
 			</staticText>
@@ -225,7 +225,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[مؤسسة تعليم السياقة  : تامنصورت]]></text>
 			</staticText>
@@ -234,7 +234,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[هذا العقد مبرم بين :]]></text>
 			</staticText>
@@ -243,7 +243,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ طرفي العقد ]]></text>
 			</staticText>
@@ -252,7 +252,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[رقم :                                 بتاريخ:]]></text>
 			</staticText>
@@ -268,13 +268,15 @@
 				<reportElement x="3" y="741" width="100" height="20" uuid="a3f08e78-a09f-4864-b92a-cc5a787578a1">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<textElement textAlignment="Left"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="1" y="736" width="555" height="20" uuid="d6ead60a-78c7-4e6f-af07-0dc71a7eb5c4"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="9" isBold="true"/>
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[   الاسم التجاري للمؤسسة : ممثلة من طرف "اسم صاحب رخصة المؤسسة أو اسم الممثل القانوني إذا كان المستفيد شخصا معنويا]]></text>
 			</staticText>
@@ -284,63 +286,63 @@
 			<textField>
 				<reportElement x="410" y="356" width="70" height="21" uuid="25c13379-0e2a-433c-869d-4aa35f1dc4f1"/>
 				<textElement>
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{nomAR}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="460" y="380" width="110" height="24" uuid="92fe6213-c047-4350-a531-286ac326a224"/>
 				<textElement>
-					<font fontName="arial1" size="16" isBold="true"/>
+					<font fontName="DejaVu Sans" size="16" isBold="true"/>
 				</textElement>
 				<text><![CDATA[رقم ب.و.ت.إ : ]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="390" y="381" width="80" height="19" uuid="ae74a991-942b-4c45-b442-35bd8e1dde4e"/>
 				<textElement>
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{cin}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="300" y="381" width="80" height="22" uuid="7889a6b7-c295-4d4f-983e-96bc86b2327e"/>
 				<textElement>
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[المزداد ب]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="120" y="381" width="52" height="22" uuid="0d48f8ef-ce68-402c-9937-3d0d3a8bf05b"/>
 				<textElement>
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[بتاريخ]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="320" y="356" width="80" height="20" uuid="426710a5-050d-40a0-9172-321ef31f3d92"/>
 				<textElement>
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{prenomAR}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="0" y="380" width="150" height="22" uuid="fed91c74-cf50-48ac-800f-385527530442"/>
 				<textElement>
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{dateNaissance}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="172" y="381" width="140" height="22" uuid="66c9767d-27da-4eea-9c5f-c6836733fcea"/>
 				<textElement>
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{lieuNaissance}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="210" y="404" width="240" height="24" uuid="88b3d37d-e501-4566-a414-4f78e14cee21"/>
 				<textElement>
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{adresseAR}]]></textFieldExpression>
 			</textField>
@@ -353,7 +355,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[الامتحانات لنيل رخصة السياقة في حدود المقاعد الممنوحة من طرف الإدارة .]]></text>
 			</staticText>
@@ -362,7 +364,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[بعد استفادة المرشح من عدد ساعات التكوين النظري والتطبيقي المتفق عليها، تلتزم المؤسسة بتقديمه لاجتياز]]></text>
 			</staticText>
@@ -371,7 +373,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[تكون فيها السلامة غير متوفرة.]]></text>
 			</staticText>
@@ -380,7 +382,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[تحتفظ المؤسسة بحق إرجاء دروس التكوين إلى تاريخ لاحق في حالة قوة قاهرة وفي كل الحالات التي تكون]]></text>
 			</staticText>
@@ -389,7 +391,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[تلتزم المؤسسة بإخبار المرشح فورا بحصوله على هذا الرقم، كما تلتزم بتسليم المرشح شهادة نهاية التكوين فور إنهائه له]]></text>
 			</staticText>
@@ -398,7 +400,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[لا يمكن الشروع في التكوين النظري إلا بعد حصول المرشح على رقم التسجيل الممنوح له من طرف الإدارة.]]></text>
 			</staticText>
@@ -407,7 +409,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[تلتزم المؤسسة بتوفير المركبة التي يتم بواسطتها إجراء الاختبار التطبيقي.]]></text>
 			</staticText>
@@ -416,14 +418,14 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[تشغلهم المؤسسة لهذا الغرض وبواسطة مركبات لتعليم السياقة في ملكيتها.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="10" width="555" height="20" uuid="855ebe43-1871-4725-8943-8cc5d379b70b"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[تلقن الدروس النظرية والتطبيقية، تحت إشراف مدير المؤسسة، من طرف مدرب أو  مدربي تعليم السياقة مرخص لهم]]></text>
 			</staticText>
@@ -433,21 +435,21 @@
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[اتفق الطرفان على تحديد عدد ساعات التكوين في ...ساعة بالنسبة للتكوين النظري و...ساعة بالنسبة للتكوين التطبيقي.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="382" width="555" height="20" uuid="5689f7a0-f801-4491-b3da-bb86725c835d"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[المادة 5 : مدة التكوين]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="245" width="555" height="135" uuid="549f0393-0d73-4a13-84ee-dc79ca600191"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[إذا توقف المرشح عن التكوين، سواء بصفة مؤقتة أو نهائية، وكيفما كانت الأسباب، يلتزم بإخبار المؤسسة كتابيا،
   في حالة التوقف لأكثر من ثلاثة (3) أشهر متتالية، يحق للمؤسسة مطالبة المرشح بأداء مبالغ الخدمات المتبقية، وغير المؤداة ؛
@@ -460,7 +462,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[المادة 4 : التزامات المرشج]]></text>
 			</staticText>
@@ -470,56 +472,56 @@
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[تلتزم المؤسسة بتكوين المرشح طبقا للبرنامج الوطني لتعليم السياقة]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="596" width="555" height="20" uuid="828a00f2-f449-4263-b280-519491a6907e"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[في حالة الاتفاق بين الطرفين، يمكن أداء مبلغ التكوين على أقساط.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="571" width="555" height="20" uuid="3a160b8d-242f-4a76-a22b-c840b6fda9e1"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[ المؤسسة . تحمل هذه الفاتورة اسم وطابع المؤسسة، وفقا للتشريعات الجاري بها العمل. ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="552" width="555" height="20" uuid="ec97d411-1b03-4270-9a49-9488c96930d3"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[تسلم للمرشح فاتورة تحدد المبالغ المدفوعة للمؤسسة. تكون هذه الفاتورة مؤرخة وموقعة من طرف صاحب]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="527" width="555" height="20" uuid="96f8cbe6-6df9-4e79-a6bc-48ace6a5720f"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[المادة 7 : كيفيات الأداء]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="504" width="555" height="20" uuid="c8c31dd5-dbd6-4b09-9dce-c502530ce016"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[من القرار الذي يحدد تعريفة ساعة التكوين النظري والتطبيقي.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="479" width="555" height="20" uuid="2590d11e-15f1-4b26-8cae-8c81a2306369"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[تحتسب التعريفة الإجمالية للتكوين على أساس تعريفة ساعة التكوين النظري والتطبيقي المحددة في المادة 1]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="456" width="555" height="20" uuid="19a65fcb-3664-49d7-9907-c277ac476a1f"/>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[المادة 6 : تعريفة التكوين]]></text>
 			</staticText>
@@ -528,7 +530,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[لا يقل هذا العدد عن العدد الأدنى المحدد بالمادة 32 من دفتر التحملات الخاص بفتح واستغلال مؤسسات تعليم السياقة.]]></text>
 			</staticText>
@@ -538,7 +540,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Center">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[توقيع صاحب المؤسسة أو ممثله القانوني]]></text>
 			</staticText>
@@ -548,7 +550,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Center">
-					<font fontName="arial1" size="15" isBold="true"/>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[توقيع المرشح أو ولي أمره مصادق عليه،]]></text>
 			</staticText>
@@ -558,7 +560,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Center">
-					<font fontName="arial1" size="15" isBold="false"/>
+					<font fontName="DejaVu Sans" size="15" isBold="false"/>
 				</textElement>
 				<text><![CDATA[عقد محرر في ثلاثة نظائر أصلية،
 في ...................................  بتاريخ، .............................................
@@ -568,7 +570,9 @@
 				<reportElement x="3" y="741" width="100" height="20" uuid="a5aaf43d-088c-4a9a-a320-24870e2fe61b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<textElement textAlignment="Left"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 		</band>
