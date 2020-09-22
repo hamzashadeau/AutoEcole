@@ -75,7 +75,7 @@
 				<text><![CDATA[تجارب المؤسسة او الاسم التجاري للمؤسسة : سيارة التعليم تامنصورت]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="80" y="0" width="400" height="50" uuid="5cb34149-a8d9-4b29-b595-5b23c10384cb"/>
+				<reportElement x="17" y="0" width="513" height="50" uuid="5cb34149-a8d9-4b29-b595-5b23c10384cb"/>
 				<textElement textAlignment="Center">
 					<font fontName="DejaVu Sans" size="30"/>
 				</textElement>
